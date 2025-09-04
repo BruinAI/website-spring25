@@ -23,16 +23,16 @@ const Footer = () => {
             <span className="text-gray-400 text-[11px]">Copyright {new Date().getFullYear()} BruinAI</span>
           </div>
           <div className="flex justify-end gap-4">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-400 hover:text-yellow-400 transition-colors text-md">
+            <a href="https://www.instagram.com/bruin_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-400 hover:text-yellow-400 transition-colors text-md">
               <FaInstagram />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-yellow-400 transition-colors text-md">
+            <a href="https://www.linkedin.com/company/bruin-ai" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-yellow-400 transition-colors text-md">
               <FaLinkedin />
             </a>
-            <a href="https://slack.com" target="_blank" rel="noopener noreferrer" aria-label="Slack" className="text-gray-400 hover:text-yellow-400 transition-colors text-md">
+            <a href="https://join.slack.com/t/bruinai/shared_invite/zt-3c9jtckbr-ZqT1Bq0FVe1msf_cXZ1wYQ" target="_blank" rel="noopener noreferrer" aria-label="Slack" className="text-gray-400 hover:text-yellow-400 transition-colors text-md">
               <FaSlack />
             </a>
-            <a href="https://custom.link" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-400 transition-colors text-md">
+            <a href="https://bruinai.substack.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-400 transition-colors text-md">
               <MdNewspaper />
             </a>
           </div>
