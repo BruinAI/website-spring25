@@ -1,0 +1,107 @@
+import React from 'react';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
+
+function Projects() {
+  const projects = [
+    {
+      title: "AI Research Project 1",
+      date: "2025",
+      img: '/assets/baidemoday.jpeg',
+      description: "Advanced machine learning research in natural language processing"
+    },
+    {
+      title: "Computer Vision Project",
+      date: "2025", 
+      img: '/assets/baidemoday.jpeg',
+      description: "Real-time object detection and recognition system"
+    },
+    {
+      title: "Data Science Initiative",
+      date: "2025",
+      img: '/assets/baidemoday.jpeg', 
+      description: "Big data analysis and predictive modeling"
+    },
+    {
+      title: "Robotics & AI",
+      date: "2025",
+      img: '/assets/baidemoday.jpeg',
+      description: "Autonomous robotics with AI decision making"
+    },
+    {
+      title: "Neural Networks Research",
+      date: "2025",
+      img: '/assets/baidemoday.jpeg',
+      description: "Deep learning applications in healthcare"
+    },
+    {
+      title: "AI Ethics Project",
+      date: "2025",
+      img: '/assets/baidemoday.jpeg',
+      description: "Responsible AI development and ethical considerations"
+    }
+  ];
+
+  return (
+    <>
+      <Navbar />
+      <main className="bg-black min-h-screen py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <h1 className="text-2xl md:text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-[#7069EC] via-[#AD70DE] to-[#EE78D0] bg-[length:60%_100%] bg-no-repeat">project highlights</h1>
+
+          {/* Projects Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map((project, idx) => (
+              <div
+                key={idx}
+                className="group rounded-xl p-4 hover:bg-zinc-900/60 transition-all duration-300 hover:scale-[1.02]"
+              >
+                {/* Middle cards (index 1, 4, 7, etc.) have text on top */}
+                {(idx % 3 === 1) ? (
+                  <>
+                    <div className="mb-4">
+                      <h3 className="text-white text-lg font-semibold leading-tight mb-2">{project.title}</h3>
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="h-px w-10 bg-gradient-to-r from-[#7069EC] to-[#EE78D0]" />
+                        <span className="text-gray-400 text-sm">{project.date}</span>
+                      </div>
+                      <p className="text-gray-300 text-sm leading-relaxed">{project.description}</p>
+                    </div>
+                    <div className="w-full aspect-[4/3] overflow-hidden rounded-lg">
+                      <img 
+                        src={project.img} 
+                        alt={project.title} 
+                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" 
+                      />
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="w-full aspect-[4/3] overflow-hidden rounded-lg mb-4">
+                      <img 
+                        src={project.img} 
+                        alt={project.title} 
+                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" 
+                      />
+                    </div>
+                    <div>
+                      <h3 className="text-white text-lg font-semibold leading-tight mb-2">{project.title}</h3>
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="h-px w-10 bg-gradient-to-r from-[#7069EC] to-[#EE78D0]" />
+                        <span className="text-gray-400 text-sm">{project.date}</span>
+                      </div>
+                      <p className="text-gray-300 text-sm leading-relaxed">{project.description}</p>
+                    </div>
+                  </>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+}
+
+export default Projects;

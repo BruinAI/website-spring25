@@ -11,3 +11,26 @@ html, body {
   background: #040505;
   color: #fff;
 }
+
+/* Ensure team circles always maintain circular shape */
+.team-circle {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Force circular shape for team member images */
+.team-member img {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Responsive team photo background positioning */
+@media (min-width: 1024px) {
+  .team-photo-bg {
+    background-position: center bottom -400px !important;
+  }
+}
