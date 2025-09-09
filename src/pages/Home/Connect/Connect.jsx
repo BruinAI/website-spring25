@@ -26,12 +26,12 @@ const cardData = [
 
 function Connect() {
     return (
-        <div className="relative w-[88vw] lg:w-[77vw] py-16">
+        <div className="relative w-[88vw] lg:w-[77vw] py-8">
             {/* Right Side - Sticky positioning */}
-            <div className="sticky top-30 right-8 sm:right-16 max-w-[30vw] pr-2 sm:pr-8 z-10 flex items-start mt-16 float-right">
+            <div className="sticky top-8 right-8 sm:right-16 max-w-[30vw] pr-2 sm:pr-8 z-10 flex items-start mt-16 float-right">
                 <div className="text-left">
-                    <span className="absolute -top-8 left-0 text-[7rem] md:text-[10rem] font-black text-white/10 select-none leading-none -z-10">02</span>
-                    <div className="relative ml-0 md:ml-5">
+                    <span className="absolute left-0 text-[7rem] md:text-[10rem] font-black text-white/10 select-none leading-none -z-10">02</span>
+                    <div className="relative ml-0 mt-10 md:ml-5">
                         <span className="inline-block mb-4 text-[#EE78D0] font-bold tracking-widest text-lg uppercase border-t-2 border-[#EE78D0] pt-2 pr-6">Connect</span>
                         <h2 className="text-xl md:text-4xl font-extrabold mb-6 text-white">Bringing opportunity, building community</h2>
                         <a href="#" className="text-[#EE78D0] font-semibold hover:underline">see more &rarr;</a>

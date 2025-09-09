@@ -62,7 +62,7 @@ function Home() {
               {/* We'll add more hero content here step by step */}
             </div>
           {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black opacity-88 z-0" />
+          <div className="absolute inset-0 bg-black opacity-[77%] z-0" />
           {/* Diagonal gradient overlay */}
           <div 
             className="absolute inset-0 z-[1] opacity-30"
@@ -136,8 +136,10 @@ function Home() {
             backgroundPosition: 'center bottom -20vw',
             backgroundSize: '90%'
           }} />
+          <div className="absolute inset-0 bg-black opacity-[77%]" />
+          
           {/* Background pattern overlay */}
-          <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: `radial-gradient(circle at 25% 25%, #7069EC 0%, transparent 50%),
                                 radial-gradient(circle at 75% 75%, #EE78D0 0%, transparent 50%)`,

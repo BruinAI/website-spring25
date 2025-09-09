@@ -11,7 +11,7 @@ export default function About() {
     {/* Fixed background section covering hero + intro + stats */}
     <section className="relative w-full min-h-[95vh] bg-fixed bg-cover bg-center" style={{ backgroundImage: `url('/assets/teamglasses.JPG')` }}>
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/84 z-0" />
+      <div className="absolute inset-0 bg-black/[77%] z-0" />
       <div 
         className="absolute inset-0 z-[1] opacity-30"
         style={{

@@ -13,7 +13,7 @@ function Projects() {
     {
       title: "News Aggregator",
       date: "W25 -",
-      img: '/assets/baidemoday.jpeg',
+      img: '/assets/newsagg.PNG',
       description: "Cut through the flood of daily headlines and focus on the stories that matter most."
     },
     {
