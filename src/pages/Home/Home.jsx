@@ -40,7 +40,7 @@ function Home() {
           style={{ backgroundImage: `url('/assets/sairs2025group.jpeg')` }}
         >
           {/* banner */}
-          <div className="text-center z-10 w-[75vw]">
+          <div className="text-center z-10 max-w-[75vw]">
             <div className="flex items-center justify-center mb-6">
               <span className="text-[#EE78D0] font-bold tracking-widest md:text-lg text-sm uppercase">
                 CREATE <span className="mx-2 font-thin">|</span> CONNECT <span className="mx-2 font-thin">|</span> LEARN
@@ -93,26 +93,31 @@ function Home() {
                 src="/assets/logos/Boston_Consulting_Group_2020_logo.svg.png" 
                 alt="Boston Consulting Group" 
                 className="h-5 md:h-8 object-contain filter"
+                loading="lazy"
               />
               <img 
                 src="/assets/logos/GumGum_Logo.png" 
                 alt="GumGum" 
                 className="h-5 md:h-8 object-contain filter"
+                loading="lazy"
               />
               <img 
                 src="/assets/logos/Amazon_Web_Services_Logo.png" 
                 alt="Amazon Web Services" 
                 className="h-5 md:h-8 object-contain filter"
+                loading="lazy"
               />
               <img 
                 src="/assets/logos/Jane_Street_Capital_Logo.png" 
                 alt="Jane Street" 
                 className="h-5 md:h-8 object-contain filter opacity-75"
+                loading="lazy"
               />
               <img 
                 src="/assets/logos/Insight_Partners_logo.png" 
                 alt="Insight Partners" 
                 className="h-5 md:h-8 object-contain filter"
+                loading="lazy"
               />
             </div>
           </div>
@@ -126,7 +131,7 @@ function Home() {
         {/* Team Section - Layer 4 */}
         <section className="relative z-40 w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[45vh] bg-black relative overflow-hidden">
           {/* Background team photo */}
-          <div className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat opacity-15" style={{
+          <div className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat opacity-17" style={{
             backgroundImage: `url('/assets/teamprof.JPG')`,
             backgroundPosition: 'center bottom -20vw',
             backgroundSize: '90%'

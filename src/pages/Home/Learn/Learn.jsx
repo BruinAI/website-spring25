@@ -2,7 +2,7 @@ import react from 'react';
 
 function Learn() {
     return (
-        <section className="w-[88vw] lg:w-[77vw] flex justify-center bg-transparent py-16 pb-30 pr-7">
+        <section className="w-[88vw] lg:w-[77vw] flex justify-center bg-transparent py-16 pb-30">
         <div className="w-[85vw] max-w-7xl flex flex-col md:flex-row items-center gap-22">
         {/* Left Column */}
         <div className="flex-[1.75] text-left relative">
@@ -31,6 +31,7 @@ function Learn() {
             src="/assets/baidemoday.jpeg"
             alt="photo"
             className="rounded-lg w-full object-cover"
+            loading="lazy"
             />
         </div>
         </div>

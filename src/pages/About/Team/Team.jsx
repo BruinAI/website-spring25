@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const placeholderImg = "https://ui-avatars.com/api/?name=Bruin+AI&background=7069EC&color=fff&size=128";
 
@@ -31,7 +31,7 @@ const teamMembers = [
   { name: "Noah Cylich", image: "/assets/headshots/team/bainoahcylich.jpg", link: "https://www.linkedin.com/in/noahcylich/" },
   { name: "Jane Li", image: "/assets/headshots/team/baijaneli.jpeg", link: "https://www.linkedin.com/in/jane-li-3b9719293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
   { name: "Anahita Vaidhya", image: "/assets/headshots/team/baianahitavaidhya.jpg", link: "https://www.linkedin.com/in/anahita-vaidhya/" },
-  { name: "Ishan Juneja", image: "/assets/headshots/team/baiishanjuneja.jpg", link: "https://www.linkedin.com/in/ishanjuneja/" },
+  { name: "Ishani V Saran", image: "/assets/headshots/baiishanisaran.jpeg", link: "https://www.linkedin.com/in/ishani-saran" },
   { name: "Aidan Luu", image: "/assets/headshots/team/baiaidanluu.jpeg", link: "https://linkedin.com/in/aidan-luu-018797279" },
   { name: "Suhani Shukla", image: "/assets/headshots/team/baisuhanishukla.jpg", link: "https://www.linkedin.com/in/suhani-s/" },
   { name: "Khush Parikh", image: "/assets/headshots/team/baikhushparikh.jpeg", link: "https://www.linkedin.com/in/khushparikh12z?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
@@ -40,7 +40,7 @@ const teamMembers = [
   { name: "Ryan Yang", image: "/assets/headshots/team/bairyanyang.jpeg", link: "https://www.linkedin.com/in/ryanmyang" },
   { name: "Yash Goyal", image: "/assets/headshots/team/baiyashgoyal.jpg", link: "https://www.linkedin.com/in/yashgoyal01" },
   { name: "Andrew Suh", image: "/assets/headshots/team/baiandrewsuh.jpg", link: "https://www.linkedin.com/in/andrew-suh-bb9bb5241" },
-  { name: "Ishani V Saran", image: "/assets/headshots/baiishanisaran.jpeg", link: "https://www.linkedin.com/in/ishani-saran" },
+  { name: "Ishan Juneja", image: "/assets/headshots/team/baiishanjuneja.jpg", link: "https://www.linkedin.com/in/ishanjuneja/" },
   { name: "Pranav Subbaraman", image: "/assets/headshots/team/baipranavsubbaraman.jpg", link: "https://www.linkedin.com/in/pranav-subbaraman/" },
   { name: "Yu Xi Ong", image: "/assets/headshots/team/baihopeong.jpg", link: "https://www.linkedin.com/in/yu-xi-ong-8872b8230/" },
   { name: "Zach Berman", image: "/assets/headshots/team/baizachberman.jpeg", link: "https://www.linkedin.com/in/zach--berman/" },
@@ -72,7 +72,7 @@ export default function Team() {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center p-4 shadow-md transition-all duration-200 rounded-lg hover:bg-zinc-800/20 focus:bg-zinc-800/50 cursor-pointer"
               >
-                <img src={member.image || placeholderImg} alt={member.name} className="team-circle sm:w-[20vw] sm:h-[20vw] md:w-[15vw] md:h-[15vw] mb-3" />
+                <img src={member.image || placeholderImg} alt={member.name} className="team-circle sm:w-[20vw] sm:h-[20vw] md:w-[15vw] md:h-[15vw] mb-3" loading="lazy" />
                 <div className="font-no text-white text-center">{member.name.toUpperCase()}</div>
                 <div className="text-xs text-gray-400 text-center mt-1">{member.role}</div>
               </a>
@@ -81,7 +81,7 @@ export default function Team() {
                 key={member.name}
                 className="flex flex-col items-center p-4"
               >
-                <img src={member.image || placeholderImg} alt={member.name} className="team-circle sm:w-[20vw] sm:h-[20vw] md:w-[15vw] md:h-[15vw] mb-3" />
+                <img src={member.image || placeholderImg} alt={member.name} className="team-circle sm:w-[20vw] sm:h-[20vw] md:w-[15vw] md:h-[15vw] mb-3" loading="lazy" />
                 <div className="font-no text-white text-center">{member.name.toUpperCase()}</div>
                 <div className="text-xs text-gray-400 text-center mt-1">{member.role}</div>
               </div>
@@ -101,7 +101,7 @@ export default function Team() {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center p-3 shadow-md transition-all duration-200 rounded-lg hover:bg-zinc-800/20 focus:bg-zinc-800/50 cursor-pointer"
               >
-                <img src={member.image || placeholderImg} alt={member.name} className="rounded-full sm:w-[17vw] sm:h-[17vw] md:w-[12vw] md:h-[12vw] mb-2 object-cover" />
+                <img src={member.image || placeholderImg} alt={member.name} className="rounded-full sm:w-[17vw] sm:h-[17vw] md:w-[12vw] md:h-[12vw] mb-2 object-cover" loading="lazy" />
                 <div className="text-sm text-white text-center">{member.name}</div>
               </a>
             ) : (
@@ -109,7 +109,7 @@ export default function Team() {
                 key={member.name}
                 className="flex flex-col items-center p-3 shadow-md"
               >
-                <img src={member.image || placeholderImg} alt={member.name} className="rounded-full sm:w-[17vw] sm:h-[17vw] md:w-[12vw] md:h-[12vw] mb-2 object-cover" />
+                <img src={member.image || placeholderImg} alt={member.name} className="rounded-full sm:w-[17vw] sm:h-[17vw] md:w-[12vw] md:h-[12vw] mb-2 object-cover" loading="lazy" />
                 <div className="text-sm text-white text-center">{member.name}</div>
               </div>
             )

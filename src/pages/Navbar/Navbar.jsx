@@ -5,7 +5,7 @@ function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="w-full flex items-center px-6 py-2 md:py-3 fixed top-0 left-0 z-50 bg-zinc-950/69 md:bg-black/11 backdrop-blur-sm mx-4 mt-2 rounded-full transition-all duration-300 hover:bg-zinc-950/80 md:hover:bg-black/20">
+        <nav className="w-full flex items-center px-6 py-2 md:py-3 fixed top-0 left-0 z-50 bg-zinc-950/69 md:bg-black/11 backdrop-blur-sm mx-4 mt-2 rounded-full transition-all duration-300 hover:bg-zinc-950/80 md:hover:bg-black/20 max-w-[95vw]">
             <Link to="/">
                 <img src={'src/assets/bruinailogo.svg'} alt="Bruin AI Logo" className="w-[125px]" />
             </Link>

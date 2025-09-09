@@ -13,7 +13,7 @@ function Card({ image, title = '', description }) {
       style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       {/* Black overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/65" />
       {/* Text content */}
       <div className="relative z-10 flex flex-col items-center justify-center w-full h-full px-6">
         {title && <div className="text-white text-center text-xl font-bold mb-2 drop-shadow-lg">{title}</div>}

@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import { FiArrowRight } from 'react-icons/fi';
+import { FiChevronRight } from 'react-icons/fi';
 
 const stepsData = [
   {
@@ -9,72 +9,49 @@ const stepsData = [
     label: '01',
     title: 'EAF',
     body: 'Engineering Activities Fair — come meet us and learn about Bruin AI.',
-    when: 'Sep 22 · 12–3pm',
-    tag: 'Week 0 · Mon'
+    when: 'Mon, Sep 22 · 12–3pm'
   },
   {
     id: 2,
     label: '02',
     title: 'Info Session + Resume Slides',
     body: 'Overview of Bruin AI, Q&A, and resume slides. Networking immediately after.',
-    when: 'Sep 25',
-    tag: 'Week 0 · Thu'
+    when: 'Thu, Sep 25'
   },
   {
     id: 3,
     label: '03',
     title: 'Research Paper Reading',
     body: 'Dive into an AI research paper with us — learn how we read and discuss research.',
-    when: 'Sep 26',
-    tag: 'Week 0 · Fri'
+    when: 'Fri, Sep 26'
   },
   {
     id: 4,
     label: '04',
     title: 'Applications Due',
     body: 'Submit your application to join Bruin AI for the upcoming cycle.',
-    when: 'Sep 26',
-    tag: 'Week 0 · Fri'
+    when: 'Fri, Sep 26 · 11:45pm'
   },
   {
     id: 5,
     label: '05',
     title: 'Coffee Chats',
     body: 'Casual conversations with members to learn more about tracks and culture.',
-    when: 'Oct 1',
-    tag: 'Week 1 · Wed'
+    when: 'Wed, Oct 1'
   },
   {
     id: 6,
     label: '06',
     title: 'AWS Summit',
     body: 'Join us at the AWS Summit — learn, network, and explore industry trends.',
-    when: 'Oct 4–5',
-    tag: 'End of Week 1'
+    when: 'Sat–Sun, Oct 4–5'
   },
   {
     id: 7,
     label: '07',
     title: 'Final Interviews',
     body: 'Selected candidates complete final round interviews.',
-    when: 'Oct 8–9',
-    tag: 'End of Week 2'
-  },
-  {
-    id: 8,
-    label: '08',
-    title: 'First GM (New Interns)',
-    body: 'Kickoff general meeting with newly selected interns.',
-    when: 'Oct 14',
-    tag: 'Week 3 · Tue'
-  },
-  {
-    id: 9,
-    label: '09',
-    title: 'First Intern Training',
-    body: 'Training session to onboard new interns and set up for success.',
-    when: 'Oct 16',
-    tag: 'Week 3 · Thu'
+    when: 'Wed–Thu, Oct 8–9'
   }
 ];
 
@@ -82,20 +59,33 @@ export default function Join() {
   return (
     <>
       <Navbar />
+      
+      {/* Sticky Application Deadline Popup */}
+      <div className="sticky top-20 right-4 md:right-8 z-50 max-w-48 sm:max-w-xs ml-auto">
+        <a 
+          href="https://forms.gle/your-application-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block hover:scale-105 transition-transform duration-200"
+        >
+          <div className="bg-gradient-to-r from-[#7069EC]/20 via-[#AD70DE]/20 to-[#EE78D0]/20 p-0.5 rounded-2xl shadow-lg backdrop-blur-sm">
+            <div className="filter backdrop-blur-sm rounded-2xl p-2 px-3 text-center">
+              <div className="text-white font-semibold text-xs">Apps due Sep 26 @ 11:45pm · Apply now</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
       <main className="bg-black min-h-screen pt-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-center justify-between mb-10">
+          <div className="flex items-center justify-start mb-10">
             <h1 className="text-xl md:text-2xl font-[1000] tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#7069EC] via-[#AD70DE] to-[#EE78D0]">
               2025 Recruitment Timeline
             </h1>
-            <div className="flex items-center gap-2 bg-zinc-900/40 border border-white/10 rounded-full px-3 py-1 text-white text-xs select-none animate-pulse">
-              <span className="text-gray-400">scroll</span>
-              <FiArrowRight className="animate-pulse" />
-            </div>
           </div>
 
           {/* Horizontal timeline */}
-          <div className="relative h-[80vh] sm:h-[67vh] md:h-[75vh] min-h-[480px]">
+          <div className="relative h-[60vh] sm:h-[67vh] md:h-[75vh]">
             {/* Center dashed line */}
             <div className="pointer-events-none absolute left-0 right-0 top-1/2 -translate-y-1/2 border-t border-dashed border-[#AD70DE]/40 animate-pulse" />
 
@@ -121,23 +111,20 @@ export default function Join() {
                         </div>
                       </div>
 
-                      {/* Opposite-side small date/time pill(s) */}
+                      {/* Opposite-side small date/time pill */}
                       <div className={`absolute left-1/2 -translate-x-1/2 ${idx % 2 === 0 ? 'top-[56%]' : 'bottom-[56%]'} z-10`}>
-                        <div className="flex items-center gap-2">
-                          <div className="px-3 py-1.5 rounded-full border border-white/10 bg-zinc-900/70 text-gray-200 text-xs md:text-sm whitespace-nowrap">
-                            {step.when}
-                          </div>
-                          {step.tag && (
-                            <div className="px-3 py-1.5 rounded-full border border-white/10 bg-zinc-900/70 text-gray-200 text-xs md:text-sm whitespace-nowrap">
-                              {step.tag}
-                            </div>
-                          )}
+                        <div className="px-3 py-1.5 rounded-full border border-white/10 bg-zinc-900/70 text-gray-200 text-xs md:text-sm whitespace-nowrap">
+                          {step.when}
                         </div>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
+            </div>
+            {/* Scroll indicator aligned with timeline */}
+            <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 bg-black/40 rounded-full pointer-events-none z-20">
+              <FiChevronRight className="text-white/70 drop-shadow-xl animate-ping" size={16} aria-hidden="true" style={{ animation: 'slideRight 1.5s ease-in-out infinite' }} />
             </div>
           </div>
         </div>

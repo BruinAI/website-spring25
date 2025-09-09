@@ -5,41 +5,59 @@ import Footer from '../Footer/Footer';
 function Projects() {
   const projects = [
     {
-      title: "AI Research Project 1",
-      date: "2025",
+      title: "Titans wth Prof. Nader",
+      date: "W25 -",
       img: '/assets/baidemoday.jpeg',
-      description: "Advanced machine learning research in natural language processing"
+      description: "Reproducing and building upon the Google Research TITANS paper with a neural-memory-enabled model."
     },
     {
-      title: "Computer Vision Project",
-      date: "2025", 
+      title: "News Aggregator",
+      date: "W25 -",
       img: '/assets/baidemoday.jpeg',
-      description: "Real-time object detection and recognition system"
+      description: "Cut through the flood of daily headlines and focus on the stories that matter most."
     },
     {
-      title: "Data Science Initiative",
-      date: "2025",
+      title: "AI Tutoring for Healthcare",
+      date: "SM25",
+      img: '/assets/baidemoday.jpeg',
+      description: "Partnership with Anand Patel's healthcare innovation teams focused on applying AI in clinical and administrative settings."
+    },
+    {
+      title: "CRCL",
+      date: "SP25",
+      img: '/assets/baidemoday.jpeg',
+      description: "Autonomous check-in mobile app that enables event hosts to manage gatherings and verify guest attendance."
+    },
+    {
+      title: "BCG",
+      date: "W25 - SP25", 
+      img: '/assets/baidemoday.jpeg',
+      description: "End-to-end development of an AI-powered digital marketing tool."
+    },
+    {
+      title: "Gumgum",
+      date: "W25 - SP25",
+      img: '/assets/baidemoday.jpeg',
+      description: "Creating an internal tool to automate and optimize prompt engineering for Jira Ticket Capitalization."
+    },
+    {
+      title: "Cymetrx",
+      date: "W25 - SP25",
+      img: '/assets/baidemoday.jpeg',
+      description: "Generative AI system to automate cybersecurity reporting from Common Vulnerabilities and Exposures built on an agentic framework."
+    },
+    {
+      title: "Nortera",
+      date: "F24 - SP25",
       img: '/assets/baidemoday.jpeg', 
-      description: "Big data analysis and predictive modeling"
+      description: "MVP for companies to track HR compliance metrics and assess risk for DEI-related litigation."
     },
     {
-      title: "Robotics & AI",
-      date: "2025",
+      title: "Fire Relief",
+      date: "W25",
       img: '/assets/baidemoday.jpeg',
-      description: "Autonomous robotics with AI decision making"
+      description: "An insurance support tool to assist households affected by the 2025 LA Wildfires in managing claims."
     },
-    {
-      title: "Neural Networks Research",
-      date: "2025",
-      img: '/assets/baidemoday.jpeg',
-      description: "Deep learning applications in healthcare"
-    },
-    {
-      title: "AI Ethics Project",
-      date: "2025",
-      img: '/assets/baidemoday.jpeg',
-      description: "Responsible AI development and ethical considerations"
-    }
   ];
 
   return (
@@ -47,10 +65,10 @@ function Projects() {
       <Navbar />
       <main className="bg-black min-h-screen py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <h1 className="text-2xl md:text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-[#7069EC] via-[#AD70DE] to-[#EE78D0] bg-[length:60%_100%] bg-no-repeat">project highlights</h1>
+          <h1 className="text-2xl md:text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-[#7069EC] via-[#AD70DE] to-[#EE78D0] bg-[length:70%_100%] md:bg-[length:60%_100%]">project highlights</h1>
 
           {/* Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, idx) => (
               <div
                 key={idx}
@@ -72,6 +90,7 @@ function Projects() {
                         src={project.img} 
                         alt={project.title} 
                         className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" 
+                        loading="lazy"
                       />
                     </div>
                   </>
@@ -82,6 +101,7 @@ function Projects() {
                         src={project.img} 
                         alt={project.title} 
                         className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" 
+                        loading="lazy"
                       />
                     </div>
                     <div>
