@@ -28,7 +28,7 @@ function Create() {
         {/* Right Column */}
         <div className="flex-[1] flex flex-col items-center min-w-[180px] max-w-[300px]">
             <img
-            src="/assets/baidemoday.jpeg"
+            src="/website-spring25/assets/baidemoday.jpeg"
             alt="photo"
             className="rounded-lg w-full object-cover"
             loading="lazy"

@@ -90,31 +90,31 @@ function Home() {
           <div className="max-w-6xl mx-auto px-8">
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
               <img 
-                src="/assets/logos/Boston_Consulting_Group_2020_logo.svg.png" 
+                src="/website-spring25/assets/logos/Boston_Consulting_Group_2020_logo.svg.png" 
                 alt="Boston Consulting Group" 
                 className="h-5 md:h-8 object-contain filter"
                 loading="lazy"
               />
               <img 
-                src="/assets/logos/GumGum_Logo.png" 
+                src="/website-spring25/assets/logos/GumGum_Logo.png" 
                 alt="GumGum" 
                 className="h-5 md:h-8 object-contain filter"
                 loading="lazy"
               />
               <img 
-                src="/assets/logos/Amazon_Web_Services_Logo.png" 
+                src="/website-spring25/assets/logos/Amazon_Web_Services_Logo.png" 
                 alt="Amazon Web Services" 
                 className="h-5 md:h-8 object-contain filter"
                 loading="lazy"
               />
               <img 
-                src="/assets/logos/Jane_Street_Capital_Logo.png" 
+                src="/website-spring25/assets/logos/Jane_Street_Capital_Logo.png" 
                 alt="Jane Street" 
                 className="h-5 md:h-8 object-contain filter opacity-75"
                 loading="lazy"
               />
               <img 
-                src="/assets/logos/Insight_Partners_logo.png" 
+                src="/website-spring25/assets/logos/Insight_Partners_logo.png" 
                 alt="Insight Partners" 
                 className="h-5 md:h-8 object-contain filter"
                 loading="lazy"
