@@ -16,7 +16,7 @@ function Home() {
       <main className="relative items-center">
         {/* Social sidebar */}
           <div className="fixed left-[3vw] top-1/2 -translate-y-1/2 z-[999]">
-            <div className="flex flex-col items-center bg-black/2 backdrop-blur-xs rounded-md py-3 px-1">
+            <div className="flex flex-col items-center bg-black/2 backdrop-blur-sm rounded-md py-3 px-1">
               <span className=" text-white font-semibold text-sm mb-5" style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}>
                 stay connected
               </span>
