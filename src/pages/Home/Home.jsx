@@ -37,7 +37,7 @@ function Home() {
         {/* Hero Section - Base Layer */}
         <section
           className="fixed z-[5] top-0 left-0 w-full h-screen flex justify-center items-center bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url('/assets/sairs2025group.jpeg')` }}
+          style={{ backgroundImage: `url('/website-spring25/assets/sairs2025group.jpeg')` }}
         >
           {/* banner */}
           <div className="text-center z-10 max-w-[75vw]">
@@ -132,7 +132,7 @@ function Home() {
         <section className="relative z-40 w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[45vh] bg-black relative overflow-hidden">
           {/* Background team photo */}
           <div className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat opacity-17" style={{
-            backgroundImage: `url('/assets/teamprof.JPG')`,
+            backgroundImage: `url('/website-spring25/assets/teamprof.JPG')`,
             backgroundPosition: 'center bottom -20vw',
             backgroundSize: '90%'
           }} />

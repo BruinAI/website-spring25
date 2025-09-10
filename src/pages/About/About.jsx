@@ -9,7 +9,7 @@ export default function About() {
     <>
     <Navbar />
     {/* Fixed background section covering hero + intro + stats */}
-    <section className="relative w-full min-h-[95vh] bg-fixed bg-cover bg-center" style={{ backgroundImage: `url('/assets/teamglasses.JPG')` }}>
+    <section className="relative w-full min-h-[95vh] bg-fixed bg-cover bg-center" style={{ backgroundImage: `url('/website-spring25/assets/teamglasses.JPG')` }}>
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-black/[77%] z-0" />
       <div 

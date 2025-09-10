@@ -12,7 +12,7 @@ function Events() {
             title: 'AAAAAA',
             venue: 'ucla',
             description: "---",
-            image: '/assets/baidemoday.jpeg'
+            image: '/website-spring25/assets/baidemoday.jpeg'
         },
         {
             dayLabel: 'SUN',
@@ -21,7 +21,7 @@ function Events() {
             title: 'BBBBBBBB',
             venue: 'ucla',
             description: "---",
-            image: '/assets/baidemoday.jpeg'
+            image: '/website-spring25/assets/baidemoday.jpeg'
         },
         {
             dayLabel: 'MON',
@@ -30,21 +30,21 @@ function Events() {
             title: 'CCCCCCCC',
             venue: 'ucla',
             description: "--- ",
-            image: '/assets/baidemoday.jpeg'
+            image: '/website-spring25/assets/baidemoday.jpeg'
         }
     ];
 
     const pastEvents = [
-        { title: '1K Pitches x Bruin Entrepreneurs', date: 'May 2025', img: '/assets/sairs2025group.jpeg', blurb: '---' },
-        { title: 'Innovation in Entrepreneurship x BE x Singapore Global Network', date: 'May 2025', img: '/assets/projshowcase.jpeg', blurb: 'The future of entrepreneurship and building with AI as a student founder' },
-        { title: 'SAIRS 2025', date: 'April 2025', img: '/assets/sairs2025group.jpeg', blurb: "Southern California's biggest AI conference" },
-        { title: 'Responsible AI Hackathon', date: 'April 2025', img: '/assets/teamai.JPG', blurb: '---' },
-        { title: 'Quarterly Project Showcase', date: 'End of Quarter', img: '/assets/projshowcase.jpeg', blurb: '---' },
-        { title: 'Intro to Venture Capital and Private Equity x Insight Partners', date: 'Nov 2024', img: '/assets/insightpartners.jpg', blurb: '---' },
-        { title: 'Codium Tech Talk', date: 'Oct 2025', img: '/assets/projshowcase.jpeg', blurb: '---' },
-        { title: 'Cisco Workshop', date: 'June 2024', img: '/assets/cisco.png', blurb: '---' },
-        { title: 'Humane + Upskill', date: 'May 2024', img: '/assets/humane.jpeg', blurb: '---' },
-        { title: 'Internal Hackathons', date: 'March/June 2024', img: '/assets/internalhackathon.png', blurb: '---' }
+        { title: '1K Pitches x Bruin Entrepreneurs', date: 'May 2025', img: '/website-spring25/assets/sairs2025group.jpeg', blurb: '---' },
+        { title: 'Innovation in Entrepreneurship x BE x Singapore Global Network', date: 'May 2025', img: '/website-spring25/assets/projshowcase.jpeg', blurb: 'The future of entrepreneurship and building with AI as a student founder' },
+        { title: 'SAIRS 2025', date: 'April 2025', img: '/website-spring25/assets/sairs2025group.jpeg', blurb: "Southern California's biggest AI conference" },
+        { title: 'Responsible AI Hackathon', date: 'April 2025', img: '/website-spring25/assets/teamai.JPG', blurb: '---' },
+        { title: 'Quarterly Project Showcase', date: 'End of Quarter', img: '/website-spring25/assets/projshowcase.jpeg', blurb: '---' },
+        { title: 'Intro to Venture Capital and Private Equity x Insight Partners', date: 'Nov 2024', img: '/website-spring25/assets/insightpartners.jpg', blurb: '---' },
+        { title: 'Codium Tech Talk', date: 'Oct 2025', img: '/website-spring25/assets/projshowcase.jpeg', blurb: '---' },
+        { title: 'Cisco Workshop', date: 'June 2024', img: '/website-spring25/assets/cisco.png', blurb: '---' },
+        { title: 'Humane + Upskill', date: 'May 2024', img: '/website-spring25/assets/humane.jpeg', blurb: '---' },
+        { title: 'Internal Hackathons', date: 'March/June 2024', img: '/website-spring25/assets/internalhackathon.png', blurb: '---' }
     ];
 
     return (
