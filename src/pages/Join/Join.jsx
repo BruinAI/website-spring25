@@ -58,10 +58,10 @@ const stepsData = [
 export default function Join() {
   return (
     <>
-      <Navbar />
+      <Navbar className="z-50"/>
       
       {/* Sticky Application Deadline Popup */}
-      <div className="sticky top-20 right-4 md:right-8 z-30 max-w-48 sm:max-w-xs ml-auto">
+      <div className="sticky top-20 right-4 md:right-8 max-w-48 sm:max-w-xs ml-auto">
         <a 
           href="https://forms.gle/your-application-link"
           target="_blank"

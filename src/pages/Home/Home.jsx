@@ -36,15 +36,13 @@ function Home() {
           </div>
         {/* Hero Section - Base Layer */}
         <section
-          className="fixed z-[5] top-0 left-0 w-full h-screen flex justify-center items-center bg-cover bg-center bg-fixed"
+          className="fixed z-[5] top-0 left-0 w-full h-screen flex justify-center items-center bg-cover bg-center bg-fixed md:bg-fixed"
           style={{
             backgroundImage: `url('/website-spring25/assets/sairs2025group.jpeg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed',
             height: '100vh',
-            minHeight: '100vh',
             position: 'relative'
           }}
         >
@@ -63,7 +61,7 @@ function Home() {
                 BRUIN AI
               </h1>
               <p className="md:text-sm text-xs md:text-md text-white mt-6 mb-4 max-w-[70%] mx-auto leading-relaxed italic">
-                UCLA's AI Everything Organization: <div></div> Creating the opportunity to learn and apply AI through real-world projects, events and workshops.
+                UCLA's AI Everything Organization:<br />Creating the opportunity to learn and apply AI through real-world projects, events and workshops.
               </p>
               <div className="flex justify-center mt-10">
                 <FiChevronDown className="text-white/55 animate-bounce drop-shadow-xl" size={21} aria-hidden="true" />
@@ -141,12 +139,12 @@ function Home() {
           {/* Background team photo */}
           <div 
             className="absolute inset-0 bg-center bg-no-repeat opacity-[21%] w-full bg-[size:95%] lg:bg-[size:90%]
-                       bg-[position:center_bottom] sm:bg-[position:center_bottom_-5%] md:bg-[position:center_bottom_-100%] lg:bg-[position:center_bottom_90%] xl:bg-[position:center_bottom_120%]" 
+                       bg-[position:center_bottom] sm:bg-[position:center_bottom_-5%] md:bg-[position:center_bottom_-100%] lg:bg-[position:center_bottom_90%] xl:bg-[position:center_bottom_120%]
+                       bg-fixed md:bg-fixed" 
             style={{
               backgroundImage: `url('/website-spring25/assets/teamprofcropped.JPG')`,
               backgroundRepeat: 'no-repeat',
-              backgroundAttachment: 'fixed',
-              width: '100%'
+              height: '100%'
             }}
           />
           

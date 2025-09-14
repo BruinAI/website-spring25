@@ -56,7 +56,7 @@ function Events() {
                     <div className="space-y-6">
                         {events.map((e, idx) => (
                             <react.Fragment key={idx}>
-                            <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr_auto] gap-3 items-start">
+                            <div className="grid grid-cols-[auto_1fr_auto] gap-3 items-start">
                                 {/* Date column */}
                                 <div className="flex sm:block items-center gap-3 text-gray-300">
                                     <div className="text-xs uppercase text-gray-400 sm:mb-0.5">{e.dayLabel}</div>
@@ -73,7 +73,7 @@ function Events() {
                                 </div>
                                 {/* Image column */}
                                 <div className="sm:col-span-1 sm:justify-self-end">
-                                    <img src={e.image} alt={e.title} className="w-full max-w-[200px] sm:max-w-xs h-20 sm:h-28 md:h-32 rounded-md object-cover object-center" loading="lazy" />
+                                    <img src={e.image} alt={e.title} className="w-full h-20 sm:h-28 md:h-32 rounded-md object-cover object-center" loading="lazy" />
                                 </div>
                             </div>
                             {idx < events.length - 1 && (
