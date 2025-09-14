@@ -57,22 +57,22 @@ export default function About() {
           <div className="align-top mb-3">
             <p className="text-xs text-gray-400 text-start">Within the past year, we had</p>
           </div>
-          <div className="flex flex-col sm:flex-row justify-between items-center md:items-start gap-8">
-            <div className="flex-1 flex flex-col items-center">
-              <span className="text-4xl font-extrabold text-white">17</span>
-              <span className="text-gray-300 text-sm mt-2 text-center">External events</span>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
+            <div className="flex flex-col items-center">
+              <span className="text-xl sm:text-4xl font-extrabold text-white">17</span>
+              <span className="text-gray-300 text-xs sm:text-sm mt-2 text-center">External events</span>
             </div>
-            <div className="flex-1 flex flex-col items-center">
-              <span className="text-4xl font-extrabold text-white">12</span>
-              <span className="text-gray-300 text-sm mt-2 text-center">Company collaborations</span>
+            <div className="flex flex-col items-center">
+              <span className="text-xl sm:text-4xl font-extrabold text-white">12</span>
+              <span className="text-gray-300 text-xs sm:text-sm mt-2 text-center">Company collaborations</span>
             </div>
-            <div className="flex-1 flex flex-col items-center">
-              <span className="text-4xl font-extrabold text-white">8</span>
-              <span className="text-gray-300 text-sm mt-2 text-center">Completed projects</span>
+            <div className="flex flex-col items-center">
+              <span className="text-xl sm:text-4xl font-extrabold text-white">8</span>
+              <span className="text-gray-300 text-xs sm:text-sm mt-2 text-center">Completed projects</span>
             </div>
-            <div className="flex-1 flex flex-col items-center">
-              <span className="text-4xl font-extrabold text-white">400+</span>
-              <span className="text-gray-300 text-sm mt-2 text-center">Conference Attendees</span>
+            <div className="flex flex-col items-center">
+              <span className="text-xl sm:text-4xl font-extrabold text-white">400+</span>
+              <span className="text-gray-300 text-xs sm:text-sm mt-2 text-center">Conference Attendees</span>
             </div>
           </div>
         </div>
