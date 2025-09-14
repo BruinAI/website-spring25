@@ -3,7 +3,6 @@ import Navbar from '../Navbar/Navbar';
 import Create from './Create/Create';
 import Connect from './Connect/Connect';
 import Learn from './Learn/Learn';
-import '../../backgrounds.css';
 import { FaInstagram, FaLinkedin, FaSlack } from 'react-icons/fa';
 import { MdNewspaper } from "react-icons/md";
 import { FiChevronDown } from 'react-icons/fi';
@@ -37,7 +36,17 @@ function Home() {
           </div>
         {/* Hero Section - Base Layer */}
         <section
-          className="fixed z-[5] top-0 left-0 w-full h-screen flex justify-center items-center bg-cover bg-center bg-fixed hero-bg"
+          className="fixed z-[5] top-0 left-0 w-full h-screen flex justify-center items-center bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: `url('/website-spring25/assets/sairs2025group.jpeg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
+            height: '100vh',
+            minHeight: '100vh',
+            position: 'relative'
+          }}
         >
           {/* banner */}
           <div className="text-center z-10 max-w-[75vw]">
@@ -73,7 +82,6 @@ function Home() {
         </section>
 
         {/* Spacer for hero section */}
-        <div className="h-screen"></div>
 
         {/* Create section - Layer 1 */}
         <div className="relative z-[20] bg-black flex justify-center items-center">
@@ -131,11 +139,16 @@ function Home() {
         {/* Team Section - Layer 4 */}
         <section className="relative z-40 w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[45vh] bg-black relative overflow-hidden">
           {/* Background team photo */}
-          <div className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat opacity-17 team-bg" style={{
-            backgroundPosition: 'center bottom -20vw',
-            backgroundSize: '90%'
-          }} />
-          <div className="absolute inset-0 bg-black opacity-[77%]" />
+          <div 
+            className="absolute inset-0 bg-center bg-no-repeat opacity-[21%] w-full bg-[size:95%] lg:bg-[size:90%]
+                       bg-[position:center_bottom] sm:bg-[position:center_bottom_-5%] md:bg-[position:center_bottom_-100%] lg:bg-[position:center_bottom_90%] xl:bg-[position:center_bottom_120%]" 
+            style={{
+              backgroundImage: `url('/website-spring25/assets/teamprofcropped.JPG')`,
+              backgroundRepeat: 'no-repeat',
+              backgroundAttachment: 'fixed',
+              width: '100%'
+            }}
+          />
           
           {/* Background pattern overlay */}
           <div className="absolute inset-0 opacity-10">
@@ -145,7 +158,7 @@ function Home() {
             }} />
           </div>
           
-          <div className="relative z-10 container mx-auto px-4 py-4 sm:py-8 md:py-16">
+          <div className="relative z-10 container mx-auto px-4 pt-2 sm:py-8 md:py-16">
             <div className="text-center mb-6 max-w-[60vw] mx-auto">
               <p className="text-xs sm:text-sm md:text-md lg:text-lg text-white max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
                 Passionate students working together with researchers and innovators to advance AI at UCLA.
