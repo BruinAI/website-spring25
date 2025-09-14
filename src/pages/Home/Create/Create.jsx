@@ -2,7 +2,7 @@ import react from 'react';
 
 function Create() {
     return (
-        <section className="w-[88vw] lg:w-[77vw] flex justify-center items-center bg-transparent py-16">
+        <section className="w-[69vw] sm:w-[73vw] lg:w-[77vw] flex justify-center items-center bg-transparent py-16">
         <div className="w-[85vw] max-w-7xl flex flex-col md:flex-row items-center gap-22">
         {/* Left Column */}
         <div className="flex-[1.75] text-left relative">
@@ -22,7 +22,7 @@ function Create() {
                     <h3 className="text-sm md:text-lg font-bold text-white mb-1">Research Collaborations</h3>
                     <p className="text-white/80 text-xs md:text-sm lg:text-base mb-4">Partnering with professors at UCLA to research and explore new advancements.</p>
                 </div>
-                <a href="#" className="text-[#EE78D0] font-semibold mt-4 inline-block hover:underline">discover &rarr;</a>
+                <a href="#" className="text-[#EE78D0] font-semibold my-4 inline-block hover:underline">discover more &rarr;</a>
             </div>
         </div>
         {/* Right Column */}

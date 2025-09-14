@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import "../../backgrounds.css";
 import Team from "./Team/Team";
 import { FiChevronDown } from 'react-icons/fi';
 
@@ -9,7 +10,7 @@ export default function About() {
     <>
     <Navbar />
     {/* Fixed background section covering hero + intro + stats */}
-    <section className="relative w-full min-h-[95vh] bg-fixed bg-cover bg-center" style={{ backgroundImage: `url('/website-spring25/assets/teamglasses.JPG')` }}>
+    <section className="relative w-full min-h-[95vh] bg-fixed bg-cover bg-center about-bg">
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-black/[77%] z-0" />
       <div 

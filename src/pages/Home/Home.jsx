@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import Create from './Create/Create';
 import Connect from './Connect/Connect';
 import Learn from './Learn/Learn';
+import '../../backgrounds.css';
 import { FaInstagram, FaLinkedin, FaSlack } from 'react-icons/fa';
 import { MdNewspaper } from "react-icons/md";
 import { FiChevronDown } from 'react-icons/fi';
@@ -17,27 +18,26 @@ function Home() {
         {/* Social sidebar */}
           <div className="fixed left-[3vw] top-1/2 -translate-y-1/2 z-[999]">
             <div className="flex flex-col items-center bg-black/2 backdrop-blur-sm rounded-md py-3 px-1">
-              <span className=" text-white font-semibold text-sm mb-5" style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}>
+              <span className=" text-white font-semibold text-xs sm:text-sm mb-5" style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}>
                 stay connected
               </span>
-              <a href="https://www.instagram.com/bruin_ai/" target="_blank" rel="noopener noreferrer" className="mb-3 text-white text-xl hover:text-[#EE78D0]">
+              <a href="https://www.instagram.com/bruin_ai/" target="_blank" rel="noopener noreferrer" className="mb-3 text-white text-sm sm:text-lg md:text-xl hover:text-[#EE78D0]">
                 <FaInstagram />
               </a>
-              <a href="https://www.linkedin.com/company/bruin-ai" target="_blank" rel="noopener noreferrer" className="mb-3 text-white text-xl hover:text-[#EE78D0]">
+              <a href="https://www.linkedin.com/company/bruin-ai" target="_blank" rel="noopener noreferrer" className="mb-3 text-white text-sm sm:text-lg md:text-xl hover:text-[#EE78D0]">
                 <FaLinkedin />
               </a>
-              <a href="https://join.slack.com/t/bruinai/shared_invite/zt-3c9jtckbr-ZqT1Bq0FVe1msf_cXZ1wYQ" target="_blank" rel="noopener noreferrer" className="mb-3 text-white text-xl hover:text-[#EE78D0]">
+              <a href="https://join.slack.com/t/bruinai/shared_invite/zt-3c9jtckbr-ZqT1Bq0FVe1msf_cXZ1wYQ" target="_blank" rel="noopener noreferrer" className="mb-3 text-white text-sm sm:text-lg md:text-xl hover:text-[#EE78D0]">
                 <FaSlack />
               </a>
-              <a href="https://bruinai.substack.com/" target="_blank" rel="noopener noreferrer" className="mb-3 text-white text-xl hover:text-[#EE78D0]">
+              <a href="https://bruinai.substack.com/" target="_blank" rel="noopener noreferrer" className="mb-3 text-white text-sm sm:text-lg md:text-xl hover:text-[#EE78D0]">
                 <MdNewspaper />
               </a>
             </div>
           </div>
         {/* Hero Section - Base Layer */}
         <section
-          className="fixed z-[5] top-0 left-0 w-full h-screen flex justify-center items-center bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url('/website-spring25/assets/sairs2025group.jpeg')` }}
+          className="fixed z-[5] top-0 left-0 w-full h-screen flex justify-center items-center bg-cover bg-center bg-fixed hero-bg"
         >
           {/* banner */}
           <div className="text-center z-10 max-w-[75vw]">
@@ -131,8 +131,7 @@ function Home() {
         {/* Team Section - Layer 4 */}
         <section className="relative z-40 w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[45vh] bg-black relative overflow-hidden">
           {/* Background team photo */}
-          <div className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat opacity-17" style={{
-            backgroundImage: `url('/website-spring25/assets/teamprof.JPG')`,
+          <div className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat opacity-17 team-bg" style={{
             backgroundPosition: 'center bottom -20vw',
             backgroundSize: '90%'
           }} />

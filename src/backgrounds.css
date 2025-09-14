@@ -1,0 +1,12 @@
+/* Background images for production deployment */
+.hero-bg {
+  background-image: url('/website-spring25/assets/sairs2025group.jpeg');
+}
+
+.team-bg {
+  background-image: url('/website-spring25/assets/teamprof.JPG');
+}
+
+.about-bg {
+  background-image: url('/website-spring25/assets/teamglasses.JPG');
+}
