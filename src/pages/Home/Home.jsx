@@ -36,7 +36,7 @@ function Home() {
           </div>
         {/* Hero Section - Base Layer */}
         <section
-          className="fixed z-[5] top-0 left-0 w-full h-screen flex justify-center items-center bg-center bg-fixed
+          className="z-[5] top-0 left-0 w-full h-screen flex justify-center items-center bg-center bg-scroll sm:bg-fixed
                      bg-[size:cover]"
           style={{
             backgroundImage: `url('/website-spring25/assets/sairs2025group.jpeg')`,
