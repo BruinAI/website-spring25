@@ -1,15 +1,33 @@
 /* Background images for production deployment */
 .hero-bg {
   background-image: url('/website-spring25/assets/sairs2025group.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
+  height: 100vh;
+  min-height: 100vh;
 }
 
 .team-bg {
   background-image: url('/website-spring25/assets/teamprof.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
+  height: 100vh;
+  min-height: 100vh;
 }
 
 .about-bg {
   background-image: url('/website-spring25/assets/teamglasses.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
+  height: 100vh;
+  min-height: 100vh;
 }
