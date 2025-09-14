@@ -7,6 +7,8 @@
   background-attachment: fixed;
   height: 100vh;
   min-height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 
 .team-bg {
@@ -17,6 +19,8 @@
   background-attachment: fixed;
   height: 100vh;
   min-height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 
 .about-bg {
@@ -27,4 +31,6 @@
   background-attachment: fixed;
   height: 100vh;
   min-height: 100vh;
+  width: 100vw;
+  position: relative;
 }
