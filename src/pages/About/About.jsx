@@ -16,7 +16,6 @@ export default function About() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        height: '100vh',
         maxHeight: '100vh',
         position: 'relative'
       }}
@@ -32,7 +31,7 @@ export default function About() {
 
       <div className="relative z-10 w-full text-white">
         {/* Hero Section */}
-        <section className="w-full h-[30vh] flex items-center justify-center pt-40">
+        <section className="w-full h-[25vh] sm:h-[30vh] flex items-center justify-center pt-20 sm:pt-40">
           <span className="flex items-center justify-center gap-2 sm:gap-3">
             <h1 className="relative text-3xl sm:text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#7069EC] via-[#AD70DE] to-[#EE78D0]">
               hi!
