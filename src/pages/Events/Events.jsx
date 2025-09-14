@@ -51,7 +51,7 @@ function Events() {
         <>
             <Navbar />
             <main className="bg-black min-h-screen pt-24">
-                <div className="max-w-6xl mx-auto px-6">
+                <div className="max-w-[97vw] sm:max-w-[85vw] mx-auto px-6">
                     <h1 className="text-2xl md:text-3xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-[#7069EC] via-[#AD70DE] to-[#EE78D0] bg-[length:70%_100%] md:bg-[length:60%_100%]">upcoming events</h1>
                     <div className="space-y-6">
                         {events.map((e, idx) => (

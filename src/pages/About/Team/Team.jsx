@@ -56,8 +56,8 @@ const teamMembers = [
 
 export default function Team() {
   return (
-    <div className="w-[95vw] lg:w-[80vw] mx-auto bg-[#040505] text-white py-12 px-4">
-      <div className="max-w-5xl mx-auto">
+    <div className="w-[95vw] lg:w-[80vw] mx-auto bg-[#040505] text-white py-12 px-4 pt-24">
+      <div className="max-w-[90vw] sm:max-w-[80vw] mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#7069EC] via-[#AD70DE] to-[#EE78D0]">Meet the Team</h1>
         
         {/* Executive Board */}

@@ -10,7 +10,7 @@ export default function About() {
     <Navbar />
     {/* Fixed background section covering hero + intro + stats */}
     <section 
-      className="relative w-full min-h-[95vh] bg-center bg-scroll sm:bg-fixed"
+      className="relative w-full min-h-[100vh] bg-center bg-scroll sm:bg-fixed"
       style={{
         backgroundImage: `url('/website-spring25/assets/teamglasses.JPG')`,
         backgroundSize: 'cover',

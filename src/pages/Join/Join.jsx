@@ -108,7 +108,7 @@ export default function Join() {
       </div>
 
       <main className="bg-black min-h-screen pt-12">
-        <div className="max-w-[90vw] mx-auto px-6">
+        <div className="max-w-[97vw] sm:max-w-[90vw] mx-auto px-6">
           <div className="flex items-center justify-start mb-10">
             <h1 className="text-xl md:text-2xl font-[1000] tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#7069EC] via-[#AD70DE] to-[#EE78D0]">
               2025 Recruitment Timeline
@@ -157,7 +157,7 @@ export default function Join() {
 
                       {/* Main Card above/below */}
                       <div className={`absolute left-1/2 -translate-x-1/2 ${idx % 2 === 0 ? 'bottom-[52%]' : 'top-[52%]'} w-[90%] md:w-[78%] z-10`}>
-                        <div className="rounded-xl border border-white/10 bg-zinc-900/70 p-4 md:p-6 backdrop-blur-sm">
+                        <div className="rounded-xl border border-white/10 bg-zinc-900/80 p-4 md:p-6 backdrop-blur-sm">
                           <h2 className="text-white font-extrabold text-lg md:text-xl leading-tight">{step.title}</h2>
                           <p className="text-gray-300 mt-2 text-xs md:text-sm">{step.body}</p>
                           <div className="mt-4 h-px w-24 bg-gradient-to-r from-[#7069EC] to-[#EE78D0]" />
@@ -166,7 +166,7 @@ export default function Join() {
 
                       {/* Opposite-side small date/time pill */}
                       <div className={`absolute left-1/2 -translate-x-1/2 ${idx % 2 === 0 ? 'top-[56%]' : 'bottom-[56%]'} z-10`}>
-                        <div className="px-3 py-1.5 rounded-full border border-white/10 bg-zinc-900/70 text-gray-200 text-xs md:text-sm whitespace-nowrap">
+                        <div className="px-3 py-1.5 rounded-full border border-white/10 bg-zinc-900/80 text-gray-200 text-xs md:text-sm whitespace-nowrap">
                           {step.when}
                         </div>
                       </div>
