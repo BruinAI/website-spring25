@@ -1,4 +1,5 @@
 import react from 'react';
+import { Link } from 'react-router-dom';
 
 function Create() {
     return (
@@ -22,13 +23,13 @@ function Create() {
                     <h3 className="text-sm md:text-lg font-bold text-white mb-1">Research Collaborations</h3>
                     <p className="text-white/80 text-xs md:text-sm lg:text-base mb-4">Partnering with professors at UCLA to research and explore new advancements.</p>
                 </div>
-                <a href="#" className="text-[#EE78D0] font-semibold my-4 inline-block hover:underline">discover more &rarr;</a>
+                <Link to="/projects" className="text-[#EE78D0] font-semibold my-4 inline-block hover:underline">discover more &rarr;</Link>
             </div>
         </div>
         {/* Right Column */}
-        <div className="flex-[1] flex flex-col items-center min-w-[180px] max-w-[300px]">
+        <div className="flex-[1] flex flex-col items-center min-w-[180px] max-w-full">
             <img
-            src="/website-spring25/assets/beckpanel.jpg"
+            src="/website-spring25/assets/beckpanel.jpeg"
             alt="photo"
             className="rounded-lg w-full object-cover"
             loading="lazy"

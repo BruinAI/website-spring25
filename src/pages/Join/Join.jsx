@@ -115,11 +115,10 @@ export default function Join() {
             </h1>
           </div>
 
-          {/* Horizontal timeline */}
+          {/* timeline */}
           <div className="relative h-[60vh] sm:h-[67vh] md:h-[75vh] overflow-hidden rounded-md">
-            {/* Two-row scrolling background images */}
+            {/* bg images 2 rows */}
             <div className="absolute inset-0 opacity-30">
-              {/* Top row - scrolling left */}
               <div ref={topRowRef} className="absolute top-0 left-0 right-0 h-1/2 flex animate-scroll-left">
                 <img src="/website-spring25/assets/joins/yachtjoin11.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
                 <img src="/website-spring25/assets/joins/sairsjoin12.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
@@ -128,7 +127,6 @@ export default function Join() {
                 <img src="/website-spring25/assets/joins/bsjdemodayjoin15.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
               </div>
               
-              {/* Bottom row - scrolling right */}
               <div ref={bottomRowRef} className="absolute bottom-0 left-0 right-0 h-1/2 flex animate-scroll-right" style={{ transform: 'translateX(-50%)' }}>
                 <img src="/website-spring25/assets/joins/retreat23join21.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
                 <img src="/website-spring25/assets/joins/sbsyachtjoin22.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
@@ -139,23 +137,22 @@ export default function Join() {
               </div>
             </div>
             
-            {/* Center dashed line */}
             <div className="pointer-events-none absolute left-0 right-0 top-1/2 -translate-y-1/2 border-t border-dashed border-[#AD70DE]/40 animate-pulse z-10" />
 
-            {/* Scroll container */}
+            {/* scroll container */}
             <div ref={timelineRef} className="relative h-full overflow-x-auto overflow-y-hidden scrollbar-thin snap-x snap-mandatory">
               <div className="absolute inset-y-0 left-0 right-0">
                 <div className="h-full w-max flex items-stretch gap-2 px-6">
                   {stepsData.map((step, idx) => (
                     <div key={step.id} className="relative snap-center flex-none w-[45vw] md:w-[40vw] lg:w-[30vw]">
-                      {/* Node on the line */}
+                      {/* nodes */}
                       <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-20">
                         <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white border border-white/10 shadow-lg flex items-center justify-center">
                           <span className="text-black font-bold text-sm md:text-base">{step.label}</span>
                         </div>
                       </div>
 
-                      {/* Main Card above/below */}
+                      {/* main cards */}
                       <div className={`absolute left-1/2 -translate-x-1/2 ${idx % 2 === 0 ? 'bottom-[52%]' : 'top-[52%]'} w-[90%] md:w-[78%] z-10`}>
                         <div className="rounded-xl border border-white/10 bg-zinc-900/80 p-4 md:p-6 backdrop-blur-sm">
                           <h2 className="text-white font-extrabold text-lg md:text-xl leading-tight">{step.title}</h2>
@@ -164,7 +161,7 @@ export default function Join() {
                         </div>
                       </div>
 
-                      {/* Opposite-side small date/time pill */}
+                      {/* small cards */}
                       <div className={`absolute left-1/2 -translate-x-1/2 ${idx % 2 === 0 ? 'top-[56%]' : 'bottom-[56%]'} z-10`}>
                         <div className="px-3 py-1.5 rounded-full border border-white/10 bg-zinc-900/80 text-gray-200 text-xs md:text-sm whitespace-nowrap">
                           {step.when}
@@ -175,7 +172,7 @@ export default function Join() {
                 </div>
               </div>
             </div>
-            {/* Scroll indicator aligned with timeline */}
+            {/* scroll indicator */}
             <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 bg-black/40 rounded-full pointer-events-none z-20">
               <FiChevronRight className="text-white/70 drop-shadow-xl animate-ping" size={16} aria-hidden="true" style={{ animation: 'slideRight 1.5s ease-in-out infinite' }} />
             </div>

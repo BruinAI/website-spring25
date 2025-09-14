@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Card from './Card/Card.jsx';
 
 const cardData = [
@@ -13,14 +14,14 @@ const cardData = [
     description: 'Presenting to VCs and investors'
   },
   {
-    image: '/website-spring25/assets/events/baiyacht.JPG',
-    title: 'Year-End Celebrations',
-    description: 'yacht party?'
+    image: '/website-spring25/assets/events/baiyacht.jpeg',
+    title: 'Team Bonding',
+    description: 'ft. our year-end celebration'
   },
   {
     image: '/website-spring25/assets/insight.jpeg',
     title: 'Career Talks',
-    description: 'with top companies'
+    description: 'recruitment events and workshops with leading companies'
   },
 ];
 
@@ -34,7 +35,7 @@ function Connect() {
                     <div className="relative ml-0 mt-10 md:ml-5">
                         <span className="inline-block mb-4 text-[#EE78D0] font-bold tracking-widest text-lg uppercase border-t-2 border-[#EE78D0] pt-2 pr-6">Connect</span>
                         <h2 className="text-xl md:text-4xl font-extrabold mb-6 text-white">Bringing opportunity, building community</h2>
-                        <a href="#" className="text-[#EE78D0] font-semibold hover:underline">see more &rarr;</a>
+                        <Link to="/events" className="text-[#EE78D0] font-semibold hover:underline">see more &rarr;</Link>
                     </div>
                 </div>
             </div>

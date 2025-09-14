@@ -15,7 +15,7 @@ const leadership = [
   { name: "Beck Peterson", role: "Recruitment Director", link: "https://www.linkedin.com/in/beckjpeterson", image: "/website-spring25/assets/headshots/baibeckpeterson.png" },
   { name: "Shivang Kulkarni", role: "Partnerships Director", link: "https://www.linkedin.com/in/shivang-kulkarni", image: "/website-spring25/assets/headshots/baishivangkulkarni.png" },
   { name: "Karen Harrison", role: "Newsletter Director", link: "https://www.linkedin.com/in/karen-harrison-31316b260/", image: "/website-spring25/assets/headshots/baikarenharrison.png" },
-  { name: "Julia Zhu", role: "Internal Events Director", link: "https://www.linkedin.com/in/julia-zhu-61a4a8352/", image: "/website-spring25/assets/headshots/baijuliazhu.png" },
+  { name: "Julia Zhu", role: "Internal Events Director", link: "https://www.linkedin.com/in/julia-zhu-61a4a8352/", image: "/website-spring25/assets/headshots/baijuliazhu 2.png" },
   { name: "Melody Myae", role: "Marketing Director", link: "https://www.linkedin.com/in/melody-myae/", image: "/website-spring25/assets/headshots/baimelodymyae.png" },
   { name: "Jonathan Chen", role: "Director of Innovation", link: "https://www.linkedin.com/in/jchen5/", image: "/website-spring25/assets/headshots/baijonathanchen.png" },
   { name: "Neha Humbe", role: "Design Director", link: "https://www.linkedin.com/in/nehahumbe", image: "/website-spring25/assets/headshots/bainehahumbe.png" },
@@ -56,13 +56,13 @@ const teamMembers = [
 
 export default function Team() {
   return (
-    <div className="w-[95vw] lg:w-[80vw] mx-auto bg-[#040505] text-white py-12 px-4 pt-24">
+    <div id="team" className="w-[95vw] lg:w-[80vw] mx-auto bg-[#040505] text-white py-12 px-4 pt-24">
       <div className="max-w-[90vw] sm:max-w-[80vw] mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#7069EC] via-[#AD70DE] to-[#EE78D0]">Meet the Team</h1>
         
-        {/* Executive Board */}
+        {/* exec */}
         <h2 className="text-2xl font-bold text-pink-400 mb-6 mt-10 text-center">Leadership</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-2 md:gap-8 mb-12">
           {leadership.map((member) => (
             member.link ? (
               <a
@@ -72,7 +72,7 @@ export default function Team() {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center p-4 shadow-md transition-all duration-200 rounded-lg hover:bg-zinc-800/20 focus:bg-zinc-800/50 cursor-pointer"
               >
-                <img src={member.image || placeholderImg} alt={member.name} className="team-circle sm:w-[20vw] sm:h-[20vw] md:w-[15vw] md:h-[15vw] mb-3" loading="lazy" />
+                <img src={member.image || placeholderImg} alt={member.name} className="rounded-full sm:w-[20vw] sm:h-[20vw] md:w-[15vw] md:h-[15vw] mb-3 object-cover" loading="lazy" />
                 <div className="font-no text-white text-center">{member.name.toUpperCase()}</div>
                 <div className="text-xs text-gray-400 text-center mt-1">{member.role}</div>
               </a>
@@ -81,7 +81,7 @@ export default function Team() {
                 key={member.name}
                 className="flex flex-col items-center p-4"
               >
-                <img src={member.image || placeholderImg} alt={member.name} className="team-circle sm:w-[20vw] sm:h-[20vw] md:w-[15vw] md:h-[15vw] mb-3" loading="lazy" />
+                <img src={member.image || placeholderImg} alt={member.name} className="rounded-full sm:w-[20vw] sm:h-[20vw] md:w-[15vw] md:h-[15vw] mb-3 object-cover" loading="lazy" />
                 <div className="font-no text-white text-center">{member.name.toUpperCase()}</div>
                 <div className="text-xs text-gray-400 text-center mt-1">{member.role}</div>
               </div>
@@ -89,9 +89,9 @@ export default function Team() {
           ))}
         </div>
 
-        {/* Team Members Grid */}
+        {/* members */}
         <h2 className="text-xl font-bold text-blue-400 mb-4 mt-8 text-center">Team Members</h2>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 mb-10">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-4 mb-10">
           {teamMembers.map((member) => (
             member.link ? (
               <a
@@ -101,7 +101,7 @@ export default function Team() {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center p-3 shadow-md transition-all duration-200 rounded-lg hover:bg-zinc-800/20 focus:bg-zinc-800/50 cursor-pointer"
               >
-                <img src={member.image || placeholderImg} alt={member.name} className="rounded-full sm:w-[17vw] sm:h-[17vw] md:w-[12vw] md:h-[12vw] mb-2 object-cover" loading="lazy" />
+                <img src={member.image || placeholderImg} alt={member.name} className="rounded-full w-[17vw] h-[17vw] md:w-[12vw] md:h-[12vw] mb-2 object-cover" loading="lazy" />
                 <div className="text-sm text-white text-center">{member.name}</div>
               </a>
             ) : (
@@ -109,7 +109,7 @@ export default function Team() {
                 key={member.name}
                 className="flex flex-col items-center p-3 shadow-md"
               >
-                <img src={member.image || placeholderImg} alt={member.name} className="rounded-full sm:w-[17vw] sm:h-[17vw] md:w-[12vw] md:h-[12vw] mb-2 object-cover" loading="lazy" />
+                <img src={member.image || placeholderImg} alt={member.name} className="rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mb-2 object-cover" loading="lazy" />
                 <div className="text-sm text-white text-center">{member.name}</div>
               </div>
             )

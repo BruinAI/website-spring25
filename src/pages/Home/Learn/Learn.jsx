@@ -1,4 +1,5 @@
 import react from 'react';
+import { Link } from 'react-router-dom';
 
 function Learn() {
     return (
@@ -22,13 +23,13 @@ function Learn() {
                     <h3 className="text-sm md:text-lg font-bold text-white mb-1">Business Strategy</h3>
                     <p className="text-white/80 text-xs md:text-sm lg:text-base mb-4">Integrating AI into business product strategy</p>
                 </div>
-                <a href="#" className="text-[#EE78D0] font-semibold my-4 inline-block hover:underline">read more &rarr;</a>
+                {/* <Link to="/about" className="text-[#EE78D0] font-semibold my-4 inline-block hover:underline">read more &rarr;</Link> */}
             </div>
         </div>
         {/* Right Column */}
         <div className="flex-[1] flex flex-col items-center min-w-[180px] max-w-full">
             <img
-            src="/website-spring25/assets/sataidan.JPG"
+            src="/website-spring25/assets/sataidan.jpeg"
             alt="photo"
             className="rounded-lg w-full object-cover"
             loading="lazy"

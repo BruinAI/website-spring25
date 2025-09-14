@@ -10,6 +10,13 @@ import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
 
 function Home() {
+  const scrollToNextSection = () => {
+    window.scrollBy({
+      top: window.innerHeight-50,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
       <Navbar />
@@ -64,7 +71,13 @@ function Home() {
                 UCLA's AI Everything Organization:<br />Creating the opportunity to learn and apply AI through real-world projects, events and workshops.
               </p>
               <div className="flex justify-center mt-10">
-                <FiChevronDown className="text-white/55 animate-bounce drop-shadow-xl" size={21} aria-hidden="true" />
+                <button 
+                  onClick={scrollToNextSection}
+                  className="text-white/55 hover:text-white/80 transition-colors duration-200 cursor-pointer"
+                  aria-label="Scroll to next section"
+                >
+                  <FiChevronDown className="animate-bounce drop-shadow-xl" size={21} />
+                </button>
               </div>
             </div>
           {/* Dark overlay */}
@@ -135,11 +148,11 @@ function Home() {
         <section className="relative z-40 w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[45vh] bg-black relative overflow-hidden">
           {/* Background team photo */}
           <div 
-            className="absolute inset-0 opacity-[21%] w-full bg-[size:95%] lg:bg-[size:90%]
-                       bg-[position:center_bottom_5%] sm:bg-[position:center_bottom_50%] md:bg-[position:center_bottom_-100%] lg:bg-[position:center_bottom_90%] xl:bg-[position:center_bottom_120%]
+            className="absolute inset-0 opacity-[21%] max-w-[95vw] lg:max-w-[90vw] center mx-auto bg-[size:cover] md:bg-[size:contain]
+                       bg-[position:center_bottom_20%] sm:bg-[position:center_bottom_50%] md:bg-[position:center_bottom]
                        bg-scroll md:bg-fixed" 
             style={{
-              backgroundImage: `url('/website-spring25/assets/teamprofcropped.JPG')`,
+              backgroundImage: `url('/website-spring25/assets/teamaicropped.JPG')`,
               backgroundRepeat: 'no-repeat',
               height: '100%'
             }}
