@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaInstagram, FaLinkedin, FaSlack } from "react-icons/fa";
 import bruinaiLogo from "../../assets/bruinailogo.svg";
 import { MdNewspaper } from "react-icons/md";
@@ -8,16 +9,16 @@ const Footer = () => {
     <footer className="bg-[#040505] w-full pt-6 pb-3 px-4">
       <div className="max-w-7xl mx-auto flex flex-col">
         <div className="flex flex-col md:flex-row items-center justify-between w-full">
-          {/* Center: Navigation */}
+          {/* footer nav */}
           <nav className="flex-1 flex justify-center gap-6">
-            <a href="/" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Home</a>
-            <a href="/about" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">About Us</a>
-            <a href="/events" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Events</a>
-            <a href="/join" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Join</a>
-            <a href="/team" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Team</a>
+            <Link to="/" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Home</Link>
+            <Link to="/about" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">About Us</Link>
+            <Link to="/events" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Events</Link>
+            <Link to="/join" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Join</Link>
+            <Link to="/about" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Team</Link>
           </nav>
         </div>
-        {/* Copyright and Socials always on the same row */}
+        {/* copyright + socials */}
         <div className="mt-4 flex flex-row w-full justify-between items-center">
           <div className="text-left">
             <span className="text-gray-400 text-[11px]">Copyright {new Date().getFullYear()} BruinAI</span>

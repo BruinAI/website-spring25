@@ -64,3 +64,30 @@ html, body {
     transform: translateX(4px);
   }
 }
+
+/* Continuous scrolling animations for join carousel background */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  transition: transform 0.1s ease-out;
+}
+
+.animate-scroll-right {
+  transition: transform 0.1s ease-out;
+}

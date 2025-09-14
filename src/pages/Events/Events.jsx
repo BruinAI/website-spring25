@@ -6,45 +6,45 @@ import { FiChevronRight } from 'react-icons/fi';
 function Events() {
     const events = [
         {
-            dayLabel: 'SUN',
-            dayNum: '6',
-            time: 'Sept 4-5 @ 6:00 pm - 9:30 pm',
-            title: 'AAAAAA',
+            dayLabel: 'SAT-SUN',
+            dayNum: '4-5',
+            time: 'October 4-5 · 6:00 pm - 9:30 pm',
+            title: 'AWS Summit',
             venue: 'ucla',
             description: "---",
-            image: '/website-spring25/assets/baidemoday.jpeg'
+            image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+'
         },
-        {
-            dayLabel: 'SUN',
-            dayNum: '6',
-            time: 'June 6 @ 9:30 pm - 11:00 pm',
-            title: 'BBBBBBBB',
-            venue: 'ucla',
-            description: "---",
-            image: '/website-spring25/assets/baidemoday.jpeg'
-        },
-        {
-            dayLabel: 'MON',
-            dayNum: '7',
-            time: 'June 7 @ 9:30 pm - 11:00 pm',
-            title: 'CCCCCCCC',
-            venue: 'ucla',
-            description: "--- ",
-            image: '/website-spring25/assets/baidemoday.jpeg'
-        }
+        // {
+        //     dayLabel: 'SUN',
+        //     dayNum: '6',
+        //     time: 'June 6 @ 9:30 pm - 11:00 pm',
+        //     title: 'BBBBBBBB',
+        //     venue: 'ucla',
+        //     description: "---",
+        //     image: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
+        // },
+        // {
+        //     dayLabel: 'MON',
+        //     dayNum: '7',
+        //     time: 'June 7 @ 9:30 pm - 11:00 pm',
+        //     title: 'CCCCCCCC',
+        //     venue: 'ucla',
+        //     description: "--- ",
+        //     image: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
+        // }
     ];
 
     const pastEvents = [
-        { title: '1K Pitches x Bruin Entrepreneurs', date: 'May 2025', img: '/website-spring25/assets/sairs2025group.jpeg', blurb: '---' },
-        { title: 'Innovation in Entrepreneurship x BE x Singapore Global Network', date: 'May 2025', img: '/website-spring25/assets/projshowcase.jpeg', blurb: 'The future of entrepreneurship and building with AI as a student founder' },
-        { title: 'SAIRS 2025', date: 'April 2025', img: '/website-spring25/assets/sairs2025group.jpeg', blurb: "Southern California's biggest AI conference" },
-        { title: 'Responsible AI Hackathon', date: 'April 2025', img: '/website-spring25/assets/teamai.JPG', blurb: '---' },
+        { title: '1K Pitches x Bruin Entrepreneurs', date: 'May 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: '---' },
+        { title: 'Innovation in Entrepreneurship x BE x Singapore Global Network', date: 'May 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: 'The future of entrepreneurship and building with AI as a student founder' },
+        { title: 'SAIRS 2025', date: 'April 2025', img: '/website-spring25/assets/events/sairs2025group.jpeg', blurb: "Southern California's biggest AI conference" },
+        { title: 'Responsible AI Hackathon', date: 'April 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: '---' },
         { title: 'Quarterly Project Showcase', date: 'End of Quarter', img: '/website-spring25/assets/projshowcase.jpeg', blurb: '---' },
-        { title: 'Intro to Venture Capital and Private Equity x Insight Partners', date: 'Nov 2024', img: '/website-spring25/assets/insightpartners.jpg', blurb: '---' },
-        { title: 'Codium Tech Talk', date: 'Oct 2025', img: '/website-spring25/assets/projshowcase.jpeg', blurb: '---' },
-        { title: 'Cisco Workshop', date: 'June 2024', img: '/website-spring25/assets/cisco.png', blurb: '---' },
-        { title: 'Humane + Upskill', date: 'May 2024', img: '/website-spring25/assets/humane.jpeg', blurb: '---' },
-        { title: 'Internal Hackathons', date: 'March/June 2024', img: '/website-spring25/assets/internalhackathon.png', blurb: '---' }
+        { title: 'Intro to Venture Capital and Private Equity x Insight Partners', date: 'Nov 2024', img: '/website-spring25/assets/events/insightpartners.jpg', blurb: '---' },
+        { title: 'Codium Tech Talk', date: 'Oct 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: '---' },
+        { title: 'Cisco Workshop', date: 'June 2024', img: '/website-spring25/assets/events/cisco.png', blurb: '---' },
+        { title: 'Humane + Upskill', date: 'May 2024', img: '/website-spring25/assets/events/humane.jpeg', blurb: '---' },
+        { title: 'Internal Hackathons', date: 'March/June 2024', img: '/website-spring25/assets/events/internalhackathon.png', blurb: '---' }
     ];
 
     return (

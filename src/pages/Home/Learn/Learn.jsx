@@ -3,7 +3,7 @@ import react from 'react';
 function Learn() {
     return (
         <section className="w-[69vw] sm:w-[73vw] lg:w-[77vw] flex justify-center bg-transparent py-16 pb-30">
-        <div className="w-[85vw] max-w-7xl flex flex-col md:flex-row items-center gap-22">
+        <div className="w-[85vw] max-w-7xl flex flex-col md:flex-row items-center gap-20">
         {/* Left Column */}
         <div className="flex-[1.75] text-left relative">
             <span className="absolute -top-8 left-0 text-[7rem] md:text-[10rem] font-black text-white/10 select-none leading-none z-0">03</span>
@@ -26,9 +26,9 @@ function Learn() {
             </div>
         </div>
         {/* Right Column */}
-        <div className="flex-[1] flex flex-col items-center min-w-[180px] max-w-[300px]">
+        <div className="flex-[1] flex flex-col items-center min-w-[180px] max-w-full">
             <img
-            src="/website-spring25/assets/baidemoday.jpeg"
+            src="/website-spring25/assets/sataidan.JPG"
             alt="photo"
             className="rounded-lg w-full object-cover"
             loading="lazy"

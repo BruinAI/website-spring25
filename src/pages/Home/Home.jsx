@@ -38,7 +38,7 @@ function Home() {
         <section
           className="z-[5] relative w-full h-screen flex justify-center items-center bg-center bg-scroll sm:bg-fixed"
           style={{
-            backgroundImage: `url('/website-spring25/assets/sairs2025group.jpeg')`,
+            backgroundImage: `url('/website-spring25/assets/events/sairs2025group.jpeg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',

@@ -6,56 +6,56 @@ function Projects() {
   const projects = [
     {
       title: "Titans wth Prof. Nader",
-      date: "W25 -",
-      img: '/website-spring25/assets/baidemoday.jpeg',
+      date: "W25 - pres",
+      img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+',
       description: "Reproducing and building upon the Google Research TITANS paper with a neural-memory-enabled model."
     },
     {
       title: "News Aggregator",
-      date: "W25 -",
-      img: '/website-spring25/assets/newsagg.PNG',
+      date: "W25 - pres",
+      img: '/website-spring25/assets/projects/newsagg.PNG',
       description: "Cut through the flood of daily headlines and focus on the stories that matter most."
     },
     {
       title: "AI Tutoring for Healthcare",
       date: "SM25",
-      img: '/website-spring25/assets/baidemoday.jpeg',
+      img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+',
       description: "Partnership with Anand Patel's healthcare innovation teams focused on applying AI in clinical and administrative settings."
     },
     {
       title: "CRCL",
       date: "SP25",
-      img: '/website-spring25/assets/baidemoday.jpeg',
+      img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+',
       description: "Autonomous check-in mobile app that enables event hosts to manage gatherings and verify guest attendance."
     },
     {
       title: "BCG",
       date: "W25 - SP25", 
-      img: '/website-spring25/assets/baidemoday.jpeg',
+      img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+',
       description: "End-to-end development of an AI-powered digital marketing tool."
     },
     {
       title: "Gumgum",
       date: "W25 - SP25",
-      img: '/website-spring25/assets/baidemoday.jpeg',
+      img: '/website-spring25/assets/projects/gumgum.jpg',
       description: "Creating an internal tool to automate and optimize prompt engineering for Jira Ticket Capitalization."
     },
     {
       title: "Cymetrx",
       date: "W25 - SP25",
-      img: '/website-spring25/assets/baidemoday.jpeg',
+      img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+',
       description: "Generative AI system to automate cybersecurity reporting from Common Vulnerabilities and Exposures built on an agentic framework."
     },
     {
       title: "Nortera",
       date: "F24 - SP25",
-      img: '/website-spring25/assets/baidemoday.jpeg', 
+      img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', 
       description: "MVP for companies to track HR compliance metrics and assess risk for DEI-related litigation."
     },
     {
       title: "Fire Relief",
       date: "W25",
-      img: '/website-spring25/assets/baidemoday.jpeg',
+      img: '/website-spring25/assets/projects/janus.png',
       description: "An insurance support tool to assist households affected by the 2025 LA Wildfires in managing claims."
     },
   ];

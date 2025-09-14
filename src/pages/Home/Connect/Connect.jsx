@@ -3,7 +3,7 @@ import Card from './Card/Card.jsx';
 
 const cardData = [
   {
-    image: '/website-spring25/assets/sairs2025group.jpeg',
+    image: '/website-spring25/assets/events/sairs2025group.jpeg',
     title: 'SAIRS 2025',
     description: "Southern California's largest AI conference"
   },
@@ -13,7 +13,7 @@ const cardData = [
     description: 'Presenting to VCs and investors'
   },
   {
-    image: '/website-spring25/assets/yacht.jpeg',
+    image: '/website-spring25/assets/events/baiyacht.JPG',
     title: 'Year-End Celebrations',
     description: 'yacht party?'
   },
