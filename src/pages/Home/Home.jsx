@@ -36,13 +36,15 @@ function Home() {
           </div>
         {/* Hero Section - Base Layer */}
         <section
-          className="fixed z-[5] top-0 left-0 w-full h-screen flex justify-center items-center bg-cover bg-center bg-fixed md:bg-fixed"
+          className="fixed z-[5] top-0 left-0 w-full h-screen flex justify-center items-center bg-cover bg-center bg-scroll md:bg-fixed
+                     bg-[size:cover]"
           style={{
             backgroundImage: `url('/website-spring25/assets/sairs2025group.jpeg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             height: '100vh',
+            maxHeight: '100vh',
             position: 'relative'
           }}
         >
@@ -140,7 +142,7 @@ function Home() {
           <div 
             className="absolute inset-0 bg-center bg-no-repeat opacity-[21%] w-full bg-[size:95%] lg:bg-[size:90%]
                        bg-[position:center_bottom] sm:bg-[position:center_bottom_-5%] md:bg-[position:center_bottom_-100%] lg:bg-[position:center_bottom_90%] xl:bg-[position:center_bottom_120%]
-                       bg-fixed md:bg-fixed" 
+                       bg-scroll sm:bg-fixed" 
             style={{
               backgroundImage: `url('/website-spring25/assets/teamprofcropped.JPG')`,
               backgroundRepeat: 'no-repeat',
