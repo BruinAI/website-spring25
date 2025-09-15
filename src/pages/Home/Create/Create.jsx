@@ -12,18 +12,26 @@ function Create() {
                 <span className="inline-block mb-4 text-[#EE78D0] font-bold tracking-widest text-lg uppercase border-t-2 border-[#EE78D0] pt-2 pr-6">Create</span>
                 <h2 className="text-xl md:text-4xl font-extrabold mb-6 text-white">Innovating solutions, driving impact</h2>
                 <div className="mb-4">
-                    <h3 className="text-sm md:text-lg font-bold text-white mb-1">Internal Projects</h3>
-                    <p className="text-white/80 text-xs md:text-sm lg:text-base mb-4">Developing innovative AI-driven products, from wildfire relief to online news aggregators.</p>
-                </div>
-                <div className="mb-4">
-                    <h3 className="text-sm md:text-lg font-bold text-white mb-1">Client Services</h3>
+                    <h3 className="text-sm md:text-lg font-bold text-white mb-1">Real-World Experience</h3>
                     <p className="text-white/80 text-xs md:text-sm lg:text-base mb-4">Building AI solutions for clients from emerging startups to Fortune-500 companies.</p>
                 </div>
                 <div className="mb-4">
                     <h3 className="text-sm md:text-lg font-bold text-white mb-1">Research Collaborations</h3>
                     <p className="text-white/80 text-xs md:text-sm lg:text-base mb-4">Partnering with professors at UCLA to research and explore new advancements.</p>
                 </div>
-                <Link to="/projects" className="text-[#EE78D0] font-semibold my-4 inline-block hover:underline">discover more &rarr;</Link>
+                <div className="mb-4">
+                    <h3 className="text-sm md:text-lg font-bold text-white mb-1">Internal Projects</h3>
+                    <p className="text-white/80 text-xs md:text-sm lg:text-base mb-4">Developing innovative AI-driven products, from wildfire relief to online news aggregators.</p>
+                </div>
+                <Link 
+                  to="/projects" 
+                  className="inline-flex items-center px-6 py-2 bg-gradient-to-r from-[#7069EC]/40 to-[#EE78D0]/40 text-white font-medium rounded-full text-xs sm:text-sm md:text-md hover:from-[#5a54d4]/60 hover:to-[#d665b8]/60 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl my-4"
+                >
+                  discover more
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
             </div>
         </div>
         {/* Right Column */}

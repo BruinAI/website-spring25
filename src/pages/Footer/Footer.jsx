@@ -12,10 +12,10 @@ const Footer = () => {
           {/* footer nav */}
           <nav className="flex-1 flex justify-center gap-6">
             <Link to="/" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Home</Link>
-            <Link to="/about" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">About Us</Link>
+            <Link to="/projects" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Projects</Link>
             <Link to="/events" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Events</Link>
+            <Link to="/about" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">About Us</Link>
             <Link to="/join" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Join</Link>
-            <Link to="/about" className="text-white text-xs font-normal hover:text-yellow-400 transition-colors">Team</Link>
           </nav>
         </div>
         {/* copyright + socials */}

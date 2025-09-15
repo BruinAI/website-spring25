@@ -6,11 +6,11 @@ import { FiChevronRight } from 'react-icons/fi';
 function Events() {
     const events = [
         {
-            dayLabel: 'FRI-SUN',
+            dayLabel: 'FRI-SAT',
             dayNum: '3-5',
-            time: 'October 3-5',
+            time: 'October 3-4',
             title: 'AWS Summit',
-            venue: 'Mong Auditorum / Covel Commons Grand Horizon / Async',
+            venue: 'Mong Auditorum / Covel Commons Grand Horizon',
             description: "learn about the future of Generative AI and Agentic AI while connecting with industry experts, professors, and fellow students",
             formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfD_GGNIoCCPaHuAZkmTztHRKmrhEkxKibOYgM72dFezkEgVQ/viewform?usp=sharing&ouid=110266998254173407620',
             image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+'

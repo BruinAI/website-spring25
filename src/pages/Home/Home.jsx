@@ -67,8 +67,8 @@ function Home() {
                 </span>
                 BRUIN AI
               </h1>
-              <p className="md:text-sm text-xs md:text-md text-white mt-6 mb-4 max-w-[70%] mx-auto leading-relaxed italic">
-                UCLA's AI Everything Organization:<br />Creating the opportunity to learn and apply AI through real-world projects, events and workshops.
+              <p className="text-xs md:text-md lg:text-lg text-white mt-6 mb-4 max-w-[70vw] lg:max-w-[55vw] mx-auto leading-relaxed">
+                <span className="font-semibold">UCLA's AI Everything Organization:</span><br /><span className="text-gray-300">Creating the opportunity to learn and apply AI through <span className="font-semibold text-white">real-world projects, events, and workshops</span>.</span>
               </p>
               <div className="flex justify-center mt-10">
                 <button 
@@ -80,9 +80,9 @@ function Home() {
                 </button>
               </div>
             </div>
-          {/* Dark overlay */}
+          {/* dark overlay */}
           <div className="absolute inset-0 bg-black opacity-[77%] z-0" />
-          {/* Diagonal gradient overlay */}
+          {/* gradient overlay */}
           <div 
             className="absolute inset-0 z-[1] opacity-30"
             style={{
@@ -104,6 +104,9 @@ function Home() {
         {/* Partner Logos Section - Layer 3 */}
         <div className="relative z-[30] bg-black flex justify-center items-center py-16">
           <div className="max-w-6xl mx-auto px-8">
+            <div className="text-center mb-8">
+              <p className="text-gray-400 text-xs">Companies we've worked with</p>
+            </div>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
               <img 
                 src="/website-spring25/assets/logos/Boston_Consulting_Group_2020_logo.svg.png" 
