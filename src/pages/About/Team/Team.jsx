@@ -8,7 +8,7 @@ const leadership = [
   { name: "Venkat Chitturi", role: "External VP", link: "https://www.linkedin.com/in/venkat-chitturi12/", image: "/website-spring25/assets/headshots/baivenkatchitturi.png" },
   { name: "Riya Gupta", role: "VP of Operations", link: "https://www.linkedin.com/in/riya-gupta-00b0301ba", image: "/website-spring25/assets/headshots/bairiyagupta.png" },
   { name: "Shreyas Sambara", role: "VP of Technology", link: "https://www.linkedin.com/in/shreyas-sambara-332737302", image: "/website-spring25/assets/headshots/baishreyassambara.png" },
-  { name: "Sophie Zhu", role: "Webmaster x Finance Director", link: "https://linkedin.com/in/sophie-zhuyy/", image: "/website-spring25/assets/headshots/baisophiezhu.png" },
+  { name: "Sophie Zhu", role: "Finance Director x Webmaster", link: "https://linkedin.com/in/sophie-zhuyy/", image: "/website-spring25/assets/headshots/baisophiezhu.png" },
   { name: "Parkirat Sandhu", role: "Tech Director", link: "https://www.linkedin.com/in/parkirat-sandhu-b77010266/", image: "/website-spring25/assets/headshots/baiparkiratsandhu.png" },
   { name: "Karen Mosoyan", role: "Research Director", link: "https://linkedin.com/in/kar-m", image: "/website-spring25/assets/headshots/baikarenmosoyan.png" },
   { name: "Sneha Agarwal", role: "External Events Director", link: "https://www.linkedin.com/in/snehaagar/", image: "/website-spring25/assets/headshots/baisnehaagarwal.png" },

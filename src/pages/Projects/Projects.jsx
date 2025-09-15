@@ -67,14 +67,13 @@ function Projects() {
         <div className="max-w-[97vw] sm:max-w-[85vw] mx-auto px-6">
           <h1 className="text-2xl md:text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-[#7069EC] via-[#AD70DE] to-[#EE78D0] bg-[length:70%_100%] md:bg-[length:60%_100%]">project highlights</h1>
 
-          {/* Projects Grid */}
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, idx) => (
               <div
                 key={idx}
                 className="group rounded-xl p-4 hover:bg-zinc-900/60 transition-all duration-300 hover:scale-[1.02]"
               >
-                {/* Middle cards (index 1, 4, 7, etc.) have text on top */}
+                {/* text on top or bottom */}
                 {(idx % 3 === 1) ? (
                   <>
                     <div className="mb-4">

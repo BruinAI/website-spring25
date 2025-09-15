@@ -1,14 +1,47 @@
-import react from 'react';
+import react, { useRef, useState, useEffect } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import { FiChevronRight } from 'react-icons/fi';
+import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 
 function Events() {
+    const pastScrollRef = useRef(null);
+    const [canScrollLeft, setCanScrollLeft] = useState(false);
+    const [canScrollRight, setCanScrollRight] = useState(false);
+
+    const scrollPastEventsByOne = (direction = 1) => {
+        const container = pastScrollRef.current;
+        if (!container) return;
+        const firstCard = container.querySelector('.past-card');
+        const gapPx = 16;
+        const step = firstCard ? firstCard.getBoundingClientRect().width + gapPx : container.clientWidth * 0.8;
+        container.scrollBy({ left: step * Math.sign(direction), behavior: 'smooth' });
+    };
+    const updateArrowState = () => {
+        const el = pastScrollRef.current;
+        if (!el) return;
+        const maxScroll = el.scrollWidth - el.clientWidth;
+        const left = el.scrollLeft;
+        setCanScrollLeft(left > 2);
+        setCanScrollRight(left < maxScroll - 2);
+    };
+
+    useEffect(() => {
+        updateArrowState();
+        const el = pastScrollRef.current;
+        if (!el) return;
+        el.addEventListener('scroll', updateArrowState, { passive: true });
+        window.addEventListener('resize', updateArrowState);
+        return () => {
+            el.removeEventListener('scroll', updateArrowState);
+            window.removeEventListener('resize', updateArrowState);
+        };
+    }, []);
+
     const events = [
         {
-            dayLabel: 'FRI-SAT',
-            dayNum: '3-5',
-            time: 'October 3-4',
+            dayLabel: 'fri-sat',
+            month: 'Oct',
+            dayNum: '3-4',
             title: 'AWS Summit',
             venue: 'Mong Auditorum / Covel Commons Grand Horizon',
             description: "learn about the future of Generative AI and Agentic AI while connecting with industry experts, professors, and fellow students",
@@ -59,13 +92,13 @@ function Events() {
                             <react.Fragment key={idx}>
                             <div className="grid grid-cols-[auto_1fr_auto] gap-4 items-start">
                                 {/* date */}
-                                <div className="flex-col sm:block items-center gap-3 text-gray-300">
-                                    <div className="text-xs uppercase text-gray-400 sm:mb-0.5">{e.dayLabel}</div>
-                                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white leading-none">{e.dayNum}</div>
+                                <div className="flex flex-col items-start text-gray-300 leading-none pt-1 md:pt-0.5">
+                                    <div className="text-sm md:text-base uppercase text-gray-300 font-semibold leading-none">{e.month}</div>
+                                    <div className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-semibold leading-none mt-0.5">{e.dayNum}</div>
+                                    <div className="text-xs uppercase text-gray-500 leading-none mt-2">{e.dayLabel}</div>
                                 </div>
                                 {/* details */}
                                 <div className="sm:col-span-1">
-                                    <div className="text-gray-300 text-xs sm:text-sm mb-1">{e.time}</div>
                                     <h2 className="text-white text-base sm:text-lg md:text-xl font-semibold mb-1 leading-snug">{e.title}</h2>
                                     <div className="text-gray-300 text-xs sm:text-sm mb-1">
                                         <span className="font-semibold text-white">{e.venue}</span>
@@ -100,13 +133,13 @@ function Events() {
                         ))}
                     </div>
 
-                    {/* Past Events slider */}
+                    {/* past events */}
                     <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#7069EC] via-[#60A5FA] to-[#34D399] bg-[length:50%_100%] md:bg-[length:40%_100%]">past events</h2>
-                    <div className="relative">
-                        <div className="overflow-x-auto overflow-y-hidden snap-x snap-mandatory past-events-scroll">
+                    <div className="relative mb-5">
+                        <div ref={pastScrollRef} className="overflow-x-auto overflow-y-hidden snap-x snap-mandatory past-events-scroll">
                             <div className="flex gap-4 w-max pr-6">
                                 {pastEvents.map((p, i) => (
-                                    <div key={i} className="snap-start flex-none w-[72vw] sm:w-[52vw] md:w-[38vw] lg:w-[30vw] bg-zinc-900/40 rounded-xl p-3 md:p-4 group hover:bg-zinc-900/60 transition-colors">
+                                    <div key={i} className="past-card snap-start flex-none w-[72vw] sm:w-[52vw] md:w-[38vw] lg:w-[30vw] bg-zinc-900/40 rounded-xl p-3 md:p-4 group hover:bg-zinc-900/60 transition-colors">
                                         <div className="w-full aspect-[4/3] overflow-hidden rounded-lg mb-3">
                                             <img src={p.img} alt={p.title} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]" loading="lazy" />
                                         </div>
@@ -119,10 +152,22 @@ function Events() {
                                 ))}
                             </div>
                         </div>
-                        {/* Scroll indicator positioned outside the scrollable area */}
-                        <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 bg-black/40 rounded-full pointer-events-none">
-                            <FiChevronRight className="text-white/70 drop-shadow-xl animate-ping" size={16} aria-hidden="true" style={{ animation: 'slideRight 1.5s ease-in-out infinite' }} />
-                        </div>
+                        <button
+                            onClick={() => scrollPastEventsByOne(-1)}
+                            disabled={!canScrollLeft}
+                            className={`absolute -left-8 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-full transition-colors ${canScrollLeft ? 'bg-black/40 hover:bg-black/60' : 'bg-black/20 cursor-not-allowed'}`}
+                            aria-label="Scroll left"
+                        >
+                            <FiChevronLeft className={`${canScrollLeft ? 'text-white/70' : 'text-white/30'}`} size={16} aria-hidden="true" />
+                        </button>
+                        <button
+                            onClick={() => scrollPastEventsByOne(1)}
+                            disabled={!canScrollRight}
+                            className={`absolute -right-8 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-full transition-colors ${canScrollRight ? 'bg-black/40 hover:bg-black/60' : 'bg-black/20 cursor-not-allowed'}`}
+                            aria-label="Scroll right"
+                        >
+                            <FiChevronRight className={`${canScrollRight ? 'text-white/70' : 'text-white/30'}`} size={16} aria-hidden="true" />
+                        </button>
                     </div>
                 </div>
             </main>

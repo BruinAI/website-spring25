@@ -3,7 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import Create from './Create/Create';
 import Connect from './Connect/Connect';
 import Learn from './Learn/Learn';
-import { FaInstagram, FaLinkedin, FaSlack } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaSlack, FaEnvelope } from 'react-icons/fa';
 import { MdNewspaper } from "react-icons/md";
 import { FiChevronDown } from 'react-icons/fi';
 import Footer from '../Footer/Footer';
@@ -27,6 +27,9 @@ function Home() {
               <span className=" text-white font-semibold text-xs sm:text-sm mb-5" style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}>
                 stay connected
               </span>
+              <a href="mailto:bruinaiucla@gmail.com" className="mb-3 text-white text-xs sm:text-base md:text-lg hover:text-[#EE78D0]">
+                <FaEnvelope />
+              </a>
               <a href="https://www.instagram.com/bruin_ai/" target="_blank" rel="noopener noreferrer" className="mb-3 text-white text-sm sm:text-lg md:text-xl hover:text-[#EE78D0]">
                 <FaInstagram />
               </a>
@@ -41,7 +44,7 @@ function Home() {
               </a>
             </div>
           </div>
-        {/* Hero Section - Base Layer */}
+        {/* hero base */}
         <section
           className="z-[5] relative w-full h-screen flex justify-center items-center bg-center bg-scroll sm:bg-fixed"
           style={{
@@ -67,7 +70,7 @@ function Home() {
                 </span>
                 BRUIN AI
               </h1>
-              <p className="text-xs md:text-md lg:text-lg text-white mt-6 mb-4 max-w-[70vw] lg:max-w-[55vw] mx-auto leading-relaxed">
+              <p className="text-xs md:text-base lg:text-lg text-white mt-6 mb-4 max-w-[70vw] lg:max-w-[55vw] mx-auto leading-relaxed">
                 <span className="font-semibold">UCLA's AI Everything Organization:</span><br /><span className="text-gray-300">Creating the opportunity to learn and apply AI through <span className="font-semibold text-white">real-world projects, events, and workshops</span>.</span>
               </p>
               <div className="flex justify-center mt-10">
@@ -91,17 +94,14 @@ function Home() {
           />
         </section>
 
-        {/* Create section - Layer 1 */}
         <div className="relative z-[20] bg-black flex justify-center items-center">
           <Create />
         </div>
 
-        {/* Connect section - Layer 2 */}
         <div className="connect-section relative z-[20] bg-black flex justify-center items-center">
           <Connect />
         </div>
 
-        {/* Partner Logos Section - Layer 3 */}
         <div className="relative z-[30] bg-black flex justify-center items-center py-16">
           <div className="max-w-6xl mx-auto px-8">
             <div className="text-center mb-8">
@@ -135,6 +135,30 @@ function Home() {
               <img 
                 src="/website-spring25/assets/logos/Insight_Partners_logo.png" 
                 alt="Insight Partners" 
+                className="h-5 md:h-8 object-contain filter opacity-75"
+                loading="lazy"
+              />
+              <img 
+                src="/website-spring25/assets/logos/cisco_logo.png" 
+                alt="Cisco" 
+                className="h-5 md:h-8 object-contain filter"
+                loading="lazy"
+              />
+              <img 
+                src="/website-spring25/assets/logos/windsurf_logo.svg" 
+                alt="Codeium (Windsurf)" 
+                className="h-5 md:h-8 object-contain filter"
+                loading="lazy"
+              />
+              <img 
+                src="/website-spring25/assets/logos/deeplearningai_logo.png" 
+                alt="Deeplearning.ai" 
+                className="h-5 md:h-8 object-contain filter"
+                loading="lazy"
+              />
+              <img 
+                src="/website-spring25/assets/logos/kindo_logo.png" 
+                alt="Kindo" 
                 className="h-5 md:h-8 object-contain filter"
                 loading="lazy"
               />
@@ -171,7 +195,7 @@ function Home() {
           
           <div className="relative z-10 container mx-auto px-4 py-4 sm:py-8 md:py-16">
             <div className="text-center mb-6 max-w-[60vw] mx-auto">
-              <p className="text-xs sm:text-sm md:text-md lg:text-lg text-white max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
                 Passionate students working together with researchers and innovators to advance AI at UCLA.
               </p>
             </div>
@@ -180,7 +204,7 @@ function Home() {
             <div className="text-center">
               <Link 
                 to="/about" 
-                className="inline-flex items-center px-6 py-2 bg-gradient-to-r from-[#7069EC] to-[#EE78D0] text-white font-medium rounded-full text-xs sm:text-sm md:text-md hover:from-[#5a54d4] hover:to-[#d665b8] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center px-6 py-2 bg-gradient-to-r from-[#7069EC] to-[#EE78D0] text-white font-medium rounded-full text-xs sm:text-sm hover:from-[#5a54d4] hover:to-[#d665b8] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Meet Our Team
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
