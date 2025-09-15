@@ -21,7 +21,7 @@ const Footer = () => {
         {/* copyright + socials */}
         <div className="mt-4 flex flex-row w-full justify-between items-center">
           <div className="text-left">
-            <span className="text-gray-400 text-[11px]">Copyright {new Date().getFullYear()} BruinAI</span>
+            <span className="text-gray-400 text-[11px]">© {new Date().getFullYear()} Bruin AI</span>
           </div>
           <div className="flex justify-end gap-4">
             <a href="mailto:bruinaiucla@gmail.com" aria-label="Email" className="text-gray-400 hover:text-yellow-400 transition-colors text-base">
