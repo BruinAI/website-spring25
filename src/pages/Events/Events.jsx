@@ -46,7 +46,7 @@ function Events() {
             venue: 'Mong Auditorum / Covel Commons Grand Horizon',
             description: "learn about the future of Generative AI and Agentic AI while connecting with industry experts, professors, and fellow students",
             formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfD_GGNIoCCPaHuAZkmTztHRKmrhEkxKibOYgM72dFezkEgVQ/viewform?usp=sharing&ouid=110266998254173407620',
-            image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+'
+            image: '/website-spring25/assets/events/Bruin AI x AWS Summit Infogrpahic.png'
         },
         // {
         //     dayLabel: 'SUN',
@@ -69,8 +69,8 @@ function Events() {
     ];
 
     const pastEvents = [
-        { title: '1K Pitches x Bruin Entrepreneurs', date: 'May 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: '---' },
-        { title: 'Innovation in Entrepreneurship x BE x Singapore Global Network', date: 'May 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: 'The future of entrepreneurship and building with AI as a student founder' },
+        // { title: '1K Pitches x Bruin Entrepreneurs', date: 'May 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: '---' },
+        // { title: 'Innovation in Entrepreneurship x BE x Singapore Global Network', date: 'May 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: 'The future of entrepreneurship and building with AI as a student founder' },
         { title: 'SAIRS 2025', date: 'April 2025', img: '/website-spring25/assets/events/sairs2025group.jpeg', blurb: "Southern California's biggest AI conference" },
         { title: 'Responsible AI Hackathon', date: 'April 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: '---' },
         { title: 'Quarterly Project Showcase', date: 'End of Quarter', img: '/website-spring25/assets/projshowcase.jpeg', blurb: '---' },

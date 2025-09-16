@@ -103,65 +103,35 @@ function Home() {
         </div>
 
         <div className="relative z-[30] bg-black flex justify-center items-center py-16">
-          <div className="max-w-6xl mx-auto px-8">
+          <div className="max-w-6xl mx-auto px-8 min-w-[100vw]">
             <div className="text-center mb-8">
               <p className="text-gray-400 text-xs">Companies we've worked with</p>
             </div>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-              <img 
-                src="/website-spring25/assets/logos/Boston_Consulting_Group_2020_logo.svg.png" 
-                alt="Boston Consulting Group" 
-                className="h-5 md:h-8 object-contain filter"
-                loading="lazy"
-              />
-              <img 
-                src="/website-spring25/assets/logos/GumGum_Logo.png" 
-                alt="GumGum" 
-                className="h-5 md:h-8 object-contain filter"
-                loading="lazy"
-              />
-              <img 
-                src="/website-spring25/assets/logos/Amazon_Web_Services_Logo.png" 
-                alt="Amazon Web Services" 
-                className="h-5 md:h-8 object-contain filter"
-                loading="lazy"
-              />
-              <img 
-                src="/website-spring25/assets/logos/Jane_Street_Capital_Logo.png" 
-                alt="Jane Street" 
-                className="h-5 md:h-8 object-contain filter opacity-75"
-                loading="lazy"
-              />
-              <img 
-                src="/website-spring25/assets/logos/Insight_Partners_logo.png" 
-                alt="Insight Partners" 
-                className="h-5 md:h-8 object-contain filter opacity-75"
-                loading="lazy"
-              />
-              <img 
-                src="/website-spring25/assets/logos/cisco_logo.png" 
-                alt="Cisco" 
-                className="h-5 md:h-8 object-contain filter"
-                loading="lazy"
-              />
-              <img 
-                src="/website-spring25/assets/logos/windsurf_logo.svg" 
-                alt="Codeium (Windsurf)" 
-                className="h-5 md:h-8 object-contain filter"
-                loading="lazy"
-              />
-              <img 
-                src="/website-spring25/assets/logos/deeplearningai_logo.png" 
-                alt="Deeplearning.ai" 
-                className="h-5 md:h-8 object-contain filter"
-                loading="lazy"
-              />
-              <img 
-                src="/website-spring25/assets/logos/kindo_logo.png" 
-                alt="Kindo" 
-                className="h-5 md:h-8 object-contain filter"
-                loading="lazy"
-              />
+            <div className="overflow-hidden">
+              <div className="flex items-center gap-4 sm:gap-8 md:gap-12 logos-marquee">
+                <div className="flex items-center gap-4 sm:gap-8 md:gap-12 shrink-0">
+                  <img src="/website-spring25/assets/logos/Boston_Consulting_Group_2020_logo.svg.png" alt="Boston Consulting Group" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/GumGum_Logo.png" alt="GumGum" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/Amazon_Web_Services_Logo.png" alt="Amazon Web Services" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/Jane_Street_Capital_Logo.png" alt="Jane Street" className="h-4 sm:h-6 md:h-8 object-contain filter opacity-75" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/Insight_Partners_logo.png" alt="Insight Partners" className="h-4 sm:h-6 md:h-8 object-contain filter opacity-75" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/cisco_logo.png" alt="Cisco" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/windsurf_logo.svg" alt="Codeium (Windsurf)" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/deeplearningai_logo.png" alt="Deeplearning.ai" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/kindo_logo.png" alt="Kindo" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                </div>
+                <div className="flex items-center gap-4 sm:gap-8 md:gap-12 shrink-0">
+                  <img src="/website-spring25/assets/logos/Boston_Consulting_Group_2020_logo.svg.png" alt="Boston Consulting Group" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/GumGum_Logo.png" alt="GumGum" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/Amazon_Web_Services_Logo.png" alt="Amazon Web Services" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/Jane_Street_Capital_Logo.png" alt="Jane Street" className="h-4 sm:h-6 md:h-8 object-contain filter opacity-75" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/Insight_Partners_logo.png" alt="Insight Partners" className="h-4 sm:h-6 md:h-8 object-contain filter opacity-75" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/cisco_logo.png" alt="Cisco" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/windsurf_logo.svg" alt="Codeium (Windsurf)" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/deeplearningai_logo.png" alt="Deeplearning.ai" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                  <img src="/website-spring25/assets/logos/kindo_logo.png" alt="Kindo" className="h-4 sm:h-6 md:h-8 object-contain filter" loading="lazy" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
