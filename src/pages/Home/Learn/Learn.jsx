@@ -32,7 +32,6 @@ function Learn() {
             src="/website-spring25/assets/sataidan.jpeg"
             alt="photo"
             className="rounded-lg w-full object-cover"
-            loading="lazy"
             />
         </div>
         </div>

@@ -81,6 +81,6 @@ html, body {
   100% { transform: translateX(-50%); }
 }
 .logos-marquee {
-  animation: logo-marquee 22s linear infinite;
-  will-change: transform;
+  animation: logo-marquee 20s linear infinite;
+  width: max-content;
 }

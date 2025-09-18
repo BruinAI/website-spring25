@@ -40,7 +40,6 @@ function Create() {
             src="/website-spring25/assets/beckpanel.jpeg"
             alt="photo"
             className="rounded-lg w-full object-cover"
-            loading="lazy"
             />
         </div>
         </div>

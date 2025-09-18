@@ -19,7 +19,7 @@ function Projects() {
     {
       title: "AI Tutoring for Healthcare",
       date: "SM25",
-      img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+',
+      img: '/website-spring25/assets/projects/anandpatel.jpeg',
       description: "Partnership with Anand Patel's healthcare innovation teams focused on applying AI in clinical and administrative settings."
     },
     {
@@ -49,7 +49,7 @@ function Projects() {
     {
       title: "Nortera",
       date: "F24 - SP25",
-      img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', 
+      img: '/website-spring25/assets/projects/nortera.png', 
       description: "MVP for companies to track HR compliance metrics and assess risk for DEI-related litigation."
     },
     {
@@ -89,7 +89,6 @@ function Projects() {
                         src={project.img} 
                         alt={project.title} 
                         className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" 
-                        loading="lazy"
                       />
                     </div>
                   </>
@@ -100,7 +99,6 @@ function Projects() {
                         src={project.img} 
                         alt={project.title} 
                         className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" 
-                        loading="lazy"
                       />
                     </div>
                     <div>

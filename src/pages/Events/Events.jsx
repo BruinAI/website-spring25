@@ -118,7 +118,7 @@ function Events() {
                                 </div>
                                 {/* img */}
                                 <div className="sm:col-span-1 sm:justify-self-end">
-                                    <img src={e.image} alt={e.title} className="max-w-[30vw] w-full h-20 sm:h-28 md:h-32 rounded-md object-cover object-center" loading="lazy" />
+                                    <img src={e.image} alt={e.title} className="max-w-[30vw] w-full h-20 sm:h-28 md:h-32 rounded-md object-cover object-center" />
                                 </div>
                             </div>
                             {idx < events.length - 1 && (
@@ -141,7 +141,7 @@ function Events() {
                                 {pastEvents.map((p, i) => (
                                     <div key={i} className="past-card snap-start flex-none w-[72vw] sm:w-[52vw] md:w-[38vw] lg:w-[30vw] bg-zinc-900/40 rounded-xl p-3 md:p-4 group hover:bg-zinc-900/60 transition-colors">
                                         <div className="w-full aspect-[4/3] overflow-hidden rounded-lg mb-3">
-                                            <img src={p.img} alt={p.title} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]" loading="lazy" />
+                                            <img src={p.img} alt={p.title} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]" />
                                         </div>
                                         <div className="">
                                             <h3 className="text-white text-base md:text-lg font-semibold leading-tight">{p.title}</h3>
