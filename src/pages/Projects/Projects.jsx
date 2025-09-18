@@ -25,7 +25,7 @@ function Projects() {
     {
       title: "CRCL",
       date: "SP25",
-      img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+',
+      img: '/website-spring25/assets/projects/crcl.jpeg',
       description: "Autonomous check-in mobile app that enables event hosts to manage gatherings and verify guest attendance."
     },
     {
