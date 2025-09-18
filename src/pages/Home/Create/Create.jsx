@@ -13,7 +13,7 @@ function Create() {
                 <h2 className="text-xl md:text-4xl font-extrabold mb-6 text-white">Innovating solutions, driving impact</h2>
                 <div className="mb-4">
                     <h3 className="text-sm md:text-lg font-bold text-white mb-1">Real-World Experience</h3>
-                    <p className="text-white/80 text-xs md:text-sm lg:text-base mb-4">Building AI solutions for clients from emerging startups to Fortune-500 companies.</p>
+                    <p className="text-white/80 text-xs md:text-sm lg:text-base mb-4">Building AI solutions for clients from emerging startups to Fortune-500 companies, delivering impact while bringing paid professional opportunities to our members.</p>
                 </div>
                 <div className="mb-4">
                     <h3 className="text-sm md:text-lg font-bold text-white mb-1">Research Collaborations</h3>
