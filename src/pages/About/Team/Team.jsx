@@ -16,7 +16,7 @@ const leadership = [
   { name: "Shivang Kulkarni", role: "Partnerships Director", link: "https://www.linkedin.com/in/shivang-kulkarni", image: "/website-spring25/assets/headshots/baishivangkulkarni.png" },
   { name: "Karen Harrison", role: "Newsletter Director", link: "https://www.linkedin.com/in/karen-harrison-31316b260/", image: "/website-spring25/assets/headshots/baikarenharrison.png" },
   { name: "Julia Zhu", role: "Internal Events Director", link: "https://www.linkedin.com/in/julia-zhu-61a4a8352/", image: "/website-spring25/assets/headshots/baijuliazhu 2.png" },
-  { name: "Melody Myae", role: "Marketing Director", link: "https://www.linkedin.com/in/melody-myae/", image: "/website-spring25/assets/headshots/baimelodymyae.png" },
+  { name: "Melody Myae", role: "Marketing Director", link: "https://www.linkedin.com/in/melodymyae/", image: "/website-spring25/assets/headshots/baimelodymyae.png" },
   { name: "Jonathan Chen", role: "Director of Innovation", link: "https://www.linkedin.com/in/jchen5/", image: "/website-spring25/assets/headshots/baijonathanchen.png" },
   { name: "Neha Humbe", role: "Design Director", link: "https://www.linkedin.com/in/nehahumbe", image: "/website-spring25/assets/headshots/bainehahumbe.png" },
 ];
@@ -49,7 +49,7 @@ const teamMembers = [
   { name: "Mason Choey", image: "/website-spring25/assets/headshots/team/baimasonchoey.png", link: "https://www.linkedin.com/in/masonchoey/" },
   { name: "Pranav Basnet", image: "/website-spring25/assets/headshots/team/baipranavbasnet.png", link: "https://www.linkedin.com/in/pranav-basnet-3a0392249/" },
   { name: "Soham Patil", image: "/website-spring25/assets/headshots/team/baisohampatil.png", link: "https://linkedin.com/in/soham-r-patil" },
-  { name: "Tai-yu Chen", image: "/website-spring25/assets/headshots/team/baitaiyuchen.png", link: "https://www.linkedin.com/in/taiyuchen33/" },
+  { name: "Tai-yu Chen", image: "/website-spring25/assets/headshots/team/baitaiyuchen.png", link: "https://www.linkedin.com/in/taiyu-c/" },
   { name: "Yash Agarwal", image: "/website-spring25/assets/headshots/team/baiyashagarwal.png", link: "https://www.linkedin.com/in/yashagarwal49" },
   { name: "Yifan Zhou", image: "/website-spring25/assets/headshots/team/baiyifanzhou.png", link: "https://www.linkedin.com/in/yifan-zhou127" },
 ];

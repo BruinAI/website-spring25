@@ -6,52 +6,59 @@ import { FiChevronRight } from 'react-icons/fi';
 const stepsData = [
   {
     id: 1,
-    label: '01',
+    label: '22',
     title: 'EAF',
-    body: 'Engineering Activities Fair — come meet us and learn about Bruin AI.',
+    body: 'Come meet us and learn about what Bruin AI does!',
     when: 'Mon, Sep 22 · 12–3pm'
   },
   {
     id: 2,
-    label: '02',
+    label: '25',
     title: 'Info Session + Resume Slides',
-    body: 'Overview of Bruin AI, Q&A, and resume slides. Networking immediately after.',
+    body: 'Overview, Q&A, resume help, and networking',
     when: 'Thu, Sep 25'
   },
   {
     id: 3,
-    label: '03',
+    label: '26',
     title: 'Research Paper Reading',
-    body: 'Dive into an AI research paper with us — learn how we read and discuss research.',
+    body: 'Dive into an AI research paper with us',
     when: 'Fri, Sep 26'
   },
   {
     id: 4,
-    label: '04',
-    title: 'Applications Due',
-    body: 'Submit your application to join Bruin AI for the upcoming cycle.',
-    when: 'Fri, Sep 26 · 11:45pm'
+    label: '29',
+    title: 'Data Science Club Showcase',
+    body: 'Joint info session with Data Science Union, DataRes, Statistics Club, and more',
+    when: 'Mon, Sep 29'
   },
   {
     id: 5,
-    label: '05',
-    title: 'Coffee Chats',
-    body: 'Casual conversations with members to learn more about tracks and culture.',
-    when: 'Wed, Oct 1'
+    label: '01',
+    title: 'Applications Due',
+    body: 'Submit your application!',
+    when: 'Wed, Oct 1 · 11:45pm'
   },
   {
     id: 6,
-    label: '06',
+    label: '03',
     title: 'AWS Summit',
-    body: 'Join us at the AWS Summit — learn, network, and explore industry trends.',
-    when: 'Sat–Sun, Oct 4–5'
+    body: 'Join us at the AWS Summit — learn, network, and explore industry trends',
+    when: 'Fri-Sat, Oct 3-4'
   },
   {
     id: 7,
-    label: '07',
+    label: '--',
+    title: 'Coffee Chats',
+    body: 'Invite Only',
+    when: 'TBD'
+  },
+  {
+    id: 8,
+    label: '--',
     title: 'Final Interviews',
-    body: 'Selected candidates complete final round interviews.',
-    when: 'Wed–Thu, Oct 8–9'
+    body: 'Invite Only',
+    when: 'TBD'
   }
 ];
 
@@ -71,9 +78,9 @@ export default function Join() {
         const maxScroll = timelineScroll.scrollWidth - timelineScroll.clientWidth;
         const scrollPercent = maxScroll > 0 ? scrollLeft / maxScroll : 0;
         
-        // Move background images based on timeline scroll
-        const topRowTransform = -scrollPercent * 40; // Move left as we scroll right, max -30%
-        const bottomRowTransform = -50 + (scrollPercent * 40); // Start at -50% and move right, max -20%
+        // move bg images based on timeline scroll
+        const topRowTransform = -scrollPercent * 40; // left, max 40%
+        const bottomRowTransform = -50 + (scrollPercent * 40); // start at -50% and move right, max 40%
         
         topRow.style.transform = `translateX(${topRowTransform}%)`;
         bottomRow.style.transform = `translateX(${bottomRowTransform}%)`;
@@ -94,14 +101,14 @@ export default function Join() {
       {/* app deadline */}
       <div className="sticky z-30 top-36 sm:top-28 md:top-20 right-4 md:right-8 max-w-48 sm:max-w-xs ml-auto">
         <a 
-          href="https://forms.gle/your-application-link"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="block hover:scale-105 transition-transform duration-200"
         >
           <div className="bg-gradient-to-r from-[#7069EC]/20 via-[#AD70DE]/20 to-[#EE78D0]/20 p-0.5 rounded-2xl shadow-lg backdrop-blur-sm animate-pulse">
             <div className="filter backdrop-blur-sm rounded-2xl p-2 px-3 text-center">
-              <div className="text-white font-semibold text-xs">Apps due Sep 26 @ 11:45pm · Apply now</div>
+              <div className="text-white font-semibold text-xs">applications coming soon ...</div>
             </div>
           </div>
         </a>
@@ -156,7 +163,7 @@ export default function Join() {
                       <div className={`absolute left-1/2 -translate-x-1/2 ${idx % 2 === 0 ? 'bottom-[52%]' : 'top-[52%]'} w-[90%] md:w-[78%] z-10`}>
                         <div className="rounded-xl border border-white/10 bg-zinc-900/80 p-4 md:p-6 backdrop-blur-sm">
                           <h2 className="text-white font-extrabold text-lg md:text-xl leading-tight">{step.title}</h2>
-                          <p className="text-gray-300 mt-2 text-xs md:text-sm">{step.body}</p>
+                          <p className="text-gray-200 mt-2 text-xs md:text-sm">{step.body}</p>
                           <div className="mt-4 h-px w-24 bg-gradient-to-r from-[#7069EC] to-[#EE78D0]" />
                         </div>
                       </div>

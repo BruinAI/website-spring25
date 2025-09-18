@@ -72,8 +72,8 @@ function Events() {
         // { title: '1K Pitches x Bruin Entrepreneurs', date: 'May 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: '---' },
         // { title: 'Innovation in Entrepreneurship x BE x Singapore Global Network', date: 'May 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: 'The future of entrepreneurship and building with AI as a student founder' },
         { title: 'SAIRS 2025', date: 'April 2025', img: '/website-spring25/assets/events/sairs2025group.jpeg', blurb: "Southern California's biggest AI conference" },
-        { title: 'Responsible AI Hackathon', date: 'April 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: '---' },
-        { title: 'Quarterly Project Showcase', date: 'End of Quarter', img: '/website-spring25/assets/projshowcase.jpeg', blurb: '---' },
+        { title: 'Responsible AI Hackathon', date: 'April 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: 'AI in productivity, infrastructure, and healthcare' },
+        { title: 'Quarterly Project Showcase', date: '--', img: '/website-spring25/assets/projshowcase.jpeg', blurb: 'Quarterly project showcases with ' },
         { title: 'Intro to Venture Capital and Private Equity x Insight Partners', date: 'Nov 2024', img: '/website-spring25/assets/events/insightpartners.jpg', blurb: '---' },
         { title: 'Codium Tech Talk', date: 'Oct 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: '---' },
         { title: 'Cisco Workshop', date: 'June 2024', img: '/website-spring25/assets/events/cisco.png', blurb: '---' },
@@ -118,7 +118,7 @@ function Events() {
                                 </div>
                                 {/* img */}
                                 <div className="sm:col-span-1 sm:justify-self-end">
-                                    <img src={e.image} alt={e.title} className="w-full h-20 sm:h-28 md:h-32 rounded-md object-cover object-center" loading="lazy" />
+                                    <img src={e.image} alt={e.title} className="max-w-[30vw] w-full h-20 sm:h-28 md:h-32 rounded-md object-cover object-center" loading="lazy" />
                                 </div>
                             </div>
                             {idx < events.length - 1 && (
