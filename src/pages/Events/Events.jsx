@@ -75,7 +75,7 @@ function Events() {
         { title: 'Responsible AI Hackathon', date: 'April 2025', img: '/assets/events/responsibleaihackathon.png', blurb: 'AI in productivity, infrastructure, and healthcare' },
         { title: 'Project Showcases', date: '--', img: '/assets/projshowcase.jpeg', blurb: 'Quarterly demo days' },
         { title: 'Intro to Venture Capital and Private Equity x Insight Partners', date: 'Nov 2024', img: '/assets/events/insightpartners.jpg', blurb: '' },
-        { title: 'Codium Tech Talk', date: 'Oct 2025', img: '/assets/events/codeium.jpeg', blurb: '' },
+        { title: 'Codeium (Windsurf) Tech Talk', date: 'Oct 2025', img: '/assets/events/codeium.jpeg', blurb: '' },
         { title: 'Cisco Workshop', date: 'June 2024', img: '/assets/events/cisco.png', blurb: '' },
         { title: 'Humane + Upskill', date: 'May 2024', img: '/assets/events/humane.jpeg', blurb: '' },
         { title: 'Internal Hackathons', date: 'March/June 2024', img: '/assets/events/internalhackathon.png', blurb: '' }

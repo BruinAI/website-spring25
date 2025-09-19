@@ -14,7 +14,7 @@ const stepsData = [
   {
     id: 2,
     label: '25',
-    title: 'Info Session + Resume Slides',
+    title: 'Info Session + Networking Night',
     body: 'Overview, Q&A, resume help, and networking',
     when: 'Thu, Sep 25'
   },
