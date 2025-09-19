@@ -179,10 +179,21 @@ export default function Join() {
                 </div>
               </div>
             </div>
-            {/* scroll indicator */}
-            <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 bg-black/40 rounded-full pointer-events-none z-20">
-              <FiChevronRight className="text-white/70 drop-shadow-xl animate-ping" size={16} aria-hidden="true" style={{ animation: 'slideRight 1.5s ease-in-out infinite' }} />
-            </div>
+            {/* scroll indicator */}            
+            <button 
+              onClick={() => {
+                if (timelineRef.current) {
+                  timelineRef.current.scrollBy({
+                    left: 300,
+                    behavior: 'smooth'
+                  });
+                }
+              }}
+              className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 bg-black/40 hover:bg-black/60 rounded-full z-20 transition-all duration-200 cursor-pointer animate-bounce-side"
+              aria-label="Scroll timeline right"
+            >
+              <FiChevronRight className="text-white/70 hover:text-white drop-shadow-xl" size={16} />
+            </button>
           </div>
         </div>
       </main>
