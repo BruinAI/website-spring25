@@ -106,7 +106,7 @@ function Home() {
         <div className="relative z-[30] bg-black flex justify-center items-center py-16">
           <div className="max-w-6xl mx-auto px-8 min-w-[100vw]">
             <div className="text-center mb-8">
-              <p className="text-gray-400 text-xs">Companies we've worked with</p>
+              <p className="text-gray-400 text-xs">Companies we've partnered with</p>
             </div>
             <div className="overflow-hidden w-full">
               <div className="flex items-center gap-4 sm:gap-8 md:gap-12 logos-marquee" style={{width: 'max-content'}}>
