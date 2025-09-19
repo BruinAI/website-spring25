@@ -31,7 +31,7 @@ function Projects() {
     {
       title: "BCG",
       date: "W25 - SP25", 
-      img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+',
+      img: '/assets/projects/sat.JPG',
       description: "End-to-end development of an AI-powered digital marketing tool."
     },
     {
