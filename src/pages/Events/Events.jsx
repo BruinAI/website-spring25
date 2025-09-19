@@ -73,12 +73,12 @@ function Events() {
         // { title: 'Innovation in Entrepreneurship x BE x Singapore Global Network', date: 'May 2025', img: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRkZEMDAwIi8+PC9zdmc+', blurb: 'The future of entrepreneurship and building with AI as a student founder' },
         { title: 'SAIRS 2025', date: 'April 2025', img: '/website-spring25/assets/events/sairs2025group.jpeg', blurb: "Southern California's biggest AI conference" },
         { title: 'Responsible AI Hackathon', date: 'April 2025', img: '/website-spring25/assets/events/responsibleaihackathon.png', blurb: 'AI in productivity, infrastructure, and healthcare' },
-        { title: 'Quarterly Project Showcase', date: '--', img: '/website-spring25/assets/projshowcase.jpeg', blurb: 'Quarterly project showcases with ' },
-        { title: 'Intro to Venture Capital and Private Equity x Insight Partners', date: 'Nov 2024', img: '/website-spring25/assets/events/insightpartners.jpg', blurb: '---' },
-        // { title: 'Codium Tech Talk', date: 'Oct 2025', img: '/website-spring25/assets/bailogosquare.svg', blurb: '---' },
-        { title: 'Cisco Workshop', date: 'June 2024', img: '/website-spring25/assets/events/cisco.png', blurb: '---' },
-        { title: 'Humane + Upskill', date: 'May 2024', img: '/website-spring25/assets/events/humane.jpeg', blurb: '---' },
-        { title: 'Internal Hackathons', date: 'March/June 2024', img: '/website-spring25/assets/events/internalhackathon.png', blurb: '---' }
+        { title: 'Project Showcases', date: '--', img: '/website-spring25/assets/projshowcase.jpeg', blurb: 'Quarterly demo days' },
+        { title: 'Intro to Venture Capital and Private Equity x Insight Partners', date: 'Nov 2024', img: '/website-spring25/assets/events/insightpartners.jpg', blurb: '' },
+        { title: 'Codium Tech Talk', date: 'Oct 2025', img: '/website-spring25/assets/events/codeium.jpeg', blurb: '' },
+        { title: 'Cisco Workshop', date: 'June 2024', img: '/website-spring25/assets/events/cisco.png', blurb: '' },
+        { title: 'Humane + Upskill', date: 'May 2024', img: '/website-spring25/assets/events/humane.jpeg', blurb: '' },
+        { title: 'Internal Hackathons', date: 'March/June 2024', img: '/website-spring25/assets/events/internalhackathon.png', blurb: '' }
     ];
 
     return (
