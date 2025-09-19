@@ -29,7 +29,7 @@ function Learn() {
         {/* right */}
         <div className="flex-[1] flex flex-col items-center min-w-[180px] max-w-full">
             <img
-            src="/website-spring25/assets/sataidan.jpeg"
+            src="/assets/sataidan.jpeg"
             alt="photo"
             className="rounded-lg w-full object-cover"
             />

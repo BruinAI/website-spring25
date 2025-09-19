@@ -4,22 +4,22 @@ import Card from './Card/Card.jsx';
 
 const cardData = [
   {
-    image: '/website-spring25/assets/events/sairs2025group.jpeg',
+    image: '/assets/events/sairs2025group.jpeg',
     title: 'SAIRS 2025',
     description: "Southern California's largest AI conference"
   },
   {
-    image: '/website-spring25/assets/baidemoday.jpeg',
+    image: '/assets/baidemoday.jpeg',
     title: 'Demo Days',
     description: 'Presenting to VCs and investors'
   },
   {
-    image: '/website-spring25/assets/events/baiyacht.jpeg',
+    image: '/assets/events/baiyacht.jpeg',
     title: 'Team Bonding',
     description: 'ft. our year-end celebration'
   },
   {
-    image: '/website-spring25/assets/insight.jpeg',
+    image: '/assets/insight.jpeg',
     title: 'Career Talks',
     description: 'recruitment events and workshops with leading companies'
   },

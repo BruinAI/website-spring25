@@ -7,25 +7,25 @@ function Projects() {
     {
       title: "Titans wth Prof. Nader",
       date: "W25 - pres",
-      img: '/website-spring25/assets/projects/titans.jpeg',
+      img: '/assets/projects/titans.jpeg',
       description: "Reproducing and building upon the Google Research TITANS paper with a neural-memory-enabled model."
     },
     {
       title: "News Aggregator",
       date: "W25 - pres",
-      img: '/website-spring25/assets/projects/newsagg.PNG',
+      img: '/assets/projects/newsagg.PNG',
       description: "Cut through the flood of daily headlines and focus on the stories that matter most."
     },
     {
       title: "AI Tutoring for Healthcare",
       date: "SM25",
-      img: '/website-spring25/assets/projects/anandpatel.jpeg',
+      img: '/assets/projects/anandpatel.jpeg',
       description: "Partnership with Anand Patel's healthcare innovation teams focused on applying AI in clinical and administrative settings."
     },
     {
       title: "CRCL",
       date: "SP25",
-      img: '/website-spring25/assets/projects/crcl.jpeg',
+      img: '/assets/projects/crcl.jpeg',
       description: "Autonomous check-in mobile app that enables event hosts to manage gatherings and verify guest attendance."
     },
     {
@@ -37,25 +37,25 @@ function Projects() {
     {
       title: "Gumgum",
       date: "W25 - SP25",
-      img: '/website-spring25/assets/projects/gumgum.jpg',
+      img: '/assets/projects/gumgum.jpg',
       description: "Creating an internal tool to automate and optimize prompt engineering for Jira Ticket Capitalization."
     },
     {
       title: "Cymetrx",
       date: "W25 - SP25",
-      img: '/website-spring25/assets/projects/f-cym.jpeg',
+      img: '/assets/projects/f-cym.jpeg',
       description: "Generative AI system to automate cybersecurity reporting from Common Vulnerabilities and Exposures built on an agentic framework."
     },
     {
       title: "Nortera",
       date: "F24 - SP25",
-      img: '/website-spring25/assets/projects/nortera.png', 
+      img: '/assets/projects/nortera.png', 
       description: "MVP for companies to track HR compliance metrics and assess risk for DEI-related litigation."
     },
     {
       title: "Fire Relief",
       date: "W25",
-      img: '/website-spring25/assets/projects/janus.png',
+      img: '/assets/projects/janus.png',
       description: "An insurance support tool to assist households affected by the 2025 LA Wildfires in managing claims."
     },
   ];

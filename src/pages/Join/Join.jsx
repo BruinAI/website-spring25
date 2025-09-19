@@ -127,20 +127,20 @@ export default function Join() {
             {/* bg images 2 rows */}
             <div className="absolute inset-0 opacity-30">
               <div ref={topRowRef} className="absolute top-0 left-0 right-0 h-1/2 flex animate-scroll-left">
-                <img src="/website-spring25/assets/joins/yachtjoin11.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/sairsjoin12.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/execjoin13.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/aspjoin14.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/bsjdemodayjoin15.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/yachtjoin11.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/sairsjoin12.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/execjoin13.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/aspjoin14.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/bsjdemodayjoin15.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
               </div>
               
               <div ref={bottomRowRef} className="absolute bottom-0 left-0 right-0 h-1/2 flex animate-scroll-right" style={{ transform: 'translateX(-50%)' }}>
-                <img src="/website-spring25/assets/joins/retreat23join21.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/sbsyachtjoin22.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/team23join23.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/ajjhyachtjoin24.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/beachjoin25.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/guitar.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/retreat23join21.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/sbsyachtjoin22.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/team23join23.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/ajjhyachtjoin24.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/beachjoin25.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/guitar.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
               </div>
             </div>
             
