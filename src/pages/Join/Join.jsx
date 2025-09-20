@@ -48,10 +48,10 @@ const stepsData = [
   },
   {
     id: 7,
-    label: '--',
+    label: '7',
     title: 'Coffee Chats',
     body: 'Invite Only',
-    when: 'TBD'
+    when: 'Tues, Oct 7'
   },
   {
     id: 8,
