@@ -31,7 +31,7 @@ function Projects() {
     {
       title: "BCG",
       date: "W25 - SP25", 
-      img: '/assets/projects/sat.JPG',
+      img: '/assets/projects/bcggreen.png',
       description: "End-to-end development of an AI-powered digital marketing tool."
     },
     {
