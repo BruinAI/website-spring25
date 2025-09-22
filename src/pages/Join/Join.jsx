@@ -101,7 +101,7 @@ export default function Join() {
       {/* app deadline */}
       <div className="sticky z-30 top-36 sm:top-28 md:top-20 right-4 md:right-8 max-w-48 sm:max-w-xs ml-auto">
         <a 
-          href="https://docs.google.com/forms/d/1bBhDPSC_VgO2LJyQfu95abx-dfHvmnLuROST9u13FII/edit"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc2SKevGqqWYPQkFxZrFbgcQ65sDsdWFZIF76KArXJLbeVK0w/viewform?usp=header"
           target="_blank"
           rel="noopener noreferrer"
           className="block hover:scale-105 transition-transform duration-200"
