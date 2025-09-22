@@ -101,14 +101,14 @@ export default function Join() {
       {/* app deadline */}
       <div className="sticky z-30 top-36 sm:top-28 md:top-20 right-4 md:right-8 max-w-48 sm:max-w-xs ml-auto">
         <a 
-          href="#"
+          href="https://docs.google.com/forms/d/1bBhDPSC_VgO2LJyQfu95abx-dfHvmnLuROST9u13FII/edit"
           target="_blank"
           rel="noopener noreferrer"
           className="block hover:scale-105 transition-transform duration-200"
         >
           <div className="bg-gradient-to-r from-[#7069EC]/20 via-[#AD70DE]/20 to-[#EE78D0]/20 p-0.5 rounded-2xl shadow-lg backdrop-blur-sm animate-pulse">
             <div className="filter backdrop-blur-sm rounded-2xl p-2 px-3 text-center">
-              <div className="text-white font-semibold text-xs">applications coming soon ...</div>
+              <div className="text-white font-semibold text-xs">Applications due 10/1 <br /> Apply now!</div>
             </div>
           </div>
         </a>
