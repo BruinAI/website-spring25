@@ -55,6 +55,33 @@ const teamMembers = [
 ];
 
 export default function Team() {
+  const leadRefs = useRef([]);
+  const memberRefs = useRef([]);
+
+  useEffect(() => {
+    const els = [...leadRefs.current.filter(Boolean), ...memberRefs.current.filter(Boolean)];
+    if (els.length === 0) return;
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('revealed');
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    els.forEach((el, idx) => {
+      el.style.transitionDelay = `${(idx % 8) * 40}ms`;
+      io.observe(el);
+    });
+
+    return () => io.disconnect();
+  }, []);
+
   return (
     <div id="team" className="w-[95vw] lg:w-[80vw] mx-auto bg-[#040505] text-white py-12 px-4 pt-24">
       <div className="max-w-[90vw] sm:max-w-[80vw] mx-auto">
@@ -63,14 +90,15 @@ export default function Team() {
         {/* exec */}
         <h2 className="text-2xl font-bold text-pink-400 mb-6 mt-10 text-center">Leadership</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-2 md:gap-8 mb-12">
-          {leadership.map((member) => (
+          {leadership.map((member, idx) => (
             member.link ? (
               <a
                 key={member.name}
                 href={member.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center p-4 shadow-md transition-all duration-200 rounded-lg hover:bg-zinc-800/20 focus:bg-zinc-800/50 cursor-pointer"
+                ref={(el) => (leadRefs.current[idx] = el)}
+                className="reveal flex flex-col items-center p-4 shadow-md transition-all duration-200 rounded-lg hover:bg-zinc-800/20 focus:bg-zinc-800/50 cursor-pointer"
               >
                 <img src={member.image || placeholderImg} alt={member.name} className="rounded-full sm:w-[20vw] sm:h-[20vw] md:w-[15vw] md:h-[15vw] mb-3 object-cover" loading="lazy" />
                 <div className="font-no text-white text-center">{member.name.toUpperCase()}</div>
@@ -79,7 +107,8 @@ export default function Team() {
             ) : (
               <div
                 key={member.name}
-                className="flex flex-col items-center p-4"
+                ref={(el) => (leadRefs.current[idx] = el)}
+                className="reveal flex flex-col items-center p-4"
               >
                 <img src={member.image || placeholderImg} alt={member.name} className="rounded-full sm:w-[20vw] sm:h-[20vw] md:w-[15vw] md:h-[15vw] mb-3 object-cover" loading="lazy" />
                 <div className="font-no text-white text-center">{member.name.toUpperCase()}</div>
@@ -92,14 +121,15 @@ export default function Team() {
         {/* members */}
         <h2 className="text-xl font-bold text-blue-400 mb-4 mt-8 text-center">Team Members</h2>
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-4 mb-10">
-          {teamMembers.map((member) => (
+          {teamMembers.map((member, idx) => (
             member.link ? (
               <a
                 key={member.name}
                 href={member.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center p-3 shadow-md transition-all duration-200 rounded-lg hover:bg-zinc-800/20 focus:bg-zinc-800/50 cursor-pointer"
+                ref={(el) => (memberRefs.current[idx] = el)}
+                className="reveal flex flex-col items-center p-3 shadow-md transition-all duration-200 rounded-lg hover:bg-zinc-800/20 focus:bg-zinc-800/50 cursor-pointer"
               >
                 <img src={member.image || placeholderImg} alt={member.name} className="rounded-full w-[17vw] h-[17vw] md:w-[12vw] md:h-[12vw] mb-2 object-cover" loading="lazy" />
                 <div className="text-sm text-white text-center">{member.name}</div>
@@ -107,7 +137,8 @@ export default function Team() {
             ) : (
               <div
                 key={member.name}
-                className="flex flex-col items-center p-3 shadow-md"
+                ref={(el) => (memberRefs.current[idx] = el)}
+                className="reveal flex flex-col items-center p-3 shadow-md"
               >
                 <img src={member.image || placeholderImg} alt={member.name} className="rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mb-2 object-cover" loading="lazy" />
                 <div className="text-sm text-white text-center">{member.name}</div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Card from './Card/Card.jsx';
 
@@ -26,6 +26,32 @@ const cardData = [
 ];
 
 function Connect() {
+    const itemRefs = useRef([]);
+
+    useEffect(() => {
+        const els = itemRefs.current.filter(Boolean);
+        if (els.length === 0) return;
+
+        const io = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        io.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.15 }
+        );
+
+        els.forEach((el, idx) => {
+            el.style.transitionDelay = `${(idx % 4) * 70}ms`;
+            io.observe(el);
+        });
+
+        return () => io.disconnect();
+    }, []);
+
     return (
         <div className="relative w-[88vw] lg:w-[77vw] py-8">
             {/* right - sticky */}
@@ -54,7 +80,7 @@ function Connect() {
                     <div className="flex flex-col gap-4 md:gap-8">
                         {cardData.map((card, idx) => (
                             <div key={idx} className="flex justify-left md:justify-center">
-                                <div className="max-w-[40vw] sm:max-w-full w-[275px] sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[500px] h-[250px] sm:h-[300px] md:h-[350px]">
+                                <div ref={(el) => (itemRefs.current[idx] = el)} className="reveal max-w-[40vw] sm:max-w-full w-[275px] sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[500px] h-[250px] sm:h-[300px] md:h-[350px]">
                                     <Card 
                                         image={card.image} 
                                         title={card.title} 

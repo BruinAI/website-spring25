@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
 function Projects() {
+  const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const elements = cardRefs.current.filter(Boolean);
+    if (elements.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.15 }
+    );
+    // reveal delay
+    elements.forEach((el, idx) => {
+      el.style.transitionDelay = `${Math.min(idx % 6, 4) * 60}ms`;
+      observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
   const projects = [
     {
       title: "Titans wth Prof. Nader",
@@ -71,7 +96,8 @@ function Projects() {
             {projects.map((project, idx) => (
               <div
                 key={idx}
-                className="group rounded-xl p-4 hover:bg-zinc-900/60 transition-all duration-300 hover:scale-[1.02]"
+                ref={(el) => (cardRefs.current[idx] = el)}
+                className="reveal group rounded-xl p-4 hover:bg-zinc-900/60 transition-all duration-300 hover:scale-[1.02]"
               >
                 {/* text on top or bottom */}
                 {(idx % 3 === 1) ? (
