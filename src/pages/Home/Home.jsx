@@ -25,7 +25,7 @@ function Home() {
         {/* Social sidebar */}
           <div className="fixed left-[3vw] top-1/2 -translate-y-1/2 z-[999]">
             <div className="flex flex-col items-center bg-black/2 backdrop-blur-sm rounded-md py-3 px-1">
-              <span className=" text-white font-semibold text-xs sm:text-sm mb-5" style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}>
+              <span className=" text-white font-semibold text-xs sm:text-sm mb-5 whitespace-nowrap leading-none" style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}>
                 stay connected
               </span>
               <a href="mailto:bruinaiucla@gmail.com" className="mb-3 text-white text-xs sm:text-base md:text-lg hover:text-[#EE78D0]">
@@ -49,7 +49,7 @@ function Home() {
         <section
           className="z-[5] relative w-full h-screen flex justify-center items-center bg-center bg-scroll sm:bg-fixed"
           style={{
-            backgroundImage: `url('/website-spring25/assets/events/sairs2025group.jpeg')`,
+            backgroundImage: `url('/assets/events/sairs2025group.jpeg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -59,6 +59,19 @@ function Home() {
         >
           {/* banner */}
           <div className="text-center z-10 max-w-[75vw]">
+            {/* application bubble link */}
+            <div className="flex justify-center mb-3 animate-pulse">
+              <Link 
+                to="/join"
+                className="block hover:scale-105 transition-transform duration-200"
+              >
+                <div className="bg-gradient-to-r from-[#7069EC]/20 via-[#AD70DE]/20 to-[#EE78D0]/20 p-0.5 rounded-2xl shadow-lg backdrop-blur-sm">
+                  <div className="filter backdrop-blur-sm rounded-2xl px-3 py-1.5 text-center">
+                    <div className="text-white font-semibold text-sm">join us!</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
             <div className="flex items-center justify-center mb-6">
               <span className="text-[#EE78D0] font-bold tracking-widest md:text-lg text-sm uppercase">
                 CREATE <span className="mx-2 font-thin">|</span> CONNECT <span className="mx-2 font-thin">|</span> LEARN
@@ -106,33 +119,33 @@ function Home() {
         <div className="relative z-[30] bg-black flex justify-center items-center py-16">
           <div className="max-w-6xl mx-auto px-8 min-w-[100vw]">
             <div className="text-center mb-8">
-              <p className="text-gray-400 text-xs">Companies we've worked with</p>
+              <p className="text-gray-400 text-xs">Companies we've partnered with</p>
             </div>
             <div className="overflow-hidden w-full">
               <div className="flex items-center gap-4 sm:gap-8 md:gap-12 logos-marquee" style={{width: 'max-content'}}>
                 <div className="flex items-center gap-4 sm:gap-8 md:gap-12 shrink-0">
-                  <img src="/website-spring25/assets/logos/Boston_Consulting_Group_2020_logo.svg.png" alt="Boston Consulting Group" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/GumGum_Logo.png" alt="GumGum" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/Amazon_Web_Services_Logo.png" alt="Amazon Web Services" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/Jane_Street_Capital_Logo.png" alt="Jane Street" className="h-4 sm:h-6 md:h-8 object-contain filter opacity-75" />
-                  <img src="/website-spring25/assets/logos/Insight_Partners_logo.png" alt="Insight Partners" className="h-4 sm:h-6 md:h-8 object-contain filter opacity-75" />
-                  <img src="/website-spring25/assets/logos/cisco_logo.png" alt="Cisco" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/windsurf_logo.svg" alt="Codeium (Windsurf)" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/deeplearningai_logo.png" alt="Deeplearning.ai" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/kindo_logo.png" alt="Kindo" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/cymetrx.png" alt="Cymetrx" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/Boston_Consulting_Group_2020_logo.svg.png" alt="Boston Consulting Group" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/GumGum_Logo.png" alt="GumGum" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/Amazon_Web_Services_Logo.png" alt="Amazon Web Services" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/Jane_Street_Capital_Logo.png" alt="Jane Street" className="h-4 sm:h-6 md:h-8 object-contain filter opacity-75" />
+                  <img src="/assets/logos/Insight_Partners_logo.png" alt="Insight Partners" className="h-4 sm:h-6 md:h-8 object-contain filter opacity-75" />
+                  <img src="/assets/logos/cisco_logo.png" alt="Cisco" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/windsurf_logo.svg" alt="Codeium (Windsurf)" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/deeplearningai_logo.png" alt="Deeplearning.ai" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/kindo_logo.png" alt="Kindo" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/cymetrx.png" alt="Cymetrx" className="h-4 sm:h-6 md:h-8 object-contain filter" />
                 </div>
                 <div className="flex items-center gap-4 sm:gap-8 md:gap-12 shrink-0">
-                  <img src="/website-spring25/assets/logos/Boston_Consulting_Group_2020_logo.svg.png" alt="Boston Consulting Group" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/GumGum_Logo.png" alt="GumGum" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/Amazon_Web_Services_Logo.png" alt="Amazon Web Services" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/Jane_Street_Capital_Logo.png" alt="Jane Street" className="h-4 sm:h-6 md:h-8 object-contain filter opacity-75" />
-                  <img src="/website-spring25/assets/logos/Insight_Partners_logo.png" alt="Insight Partners" className="h-4 sm:h-6 md:h-8 object-contain filter opacity-75" />
-                  <img src="/website-spring25/assets/logos/cisco_logo.png" alt="Cisco" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/windsurf_logo.svg" alt="Codeium (Windsurf)" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/deeplearningai_logo.png" alt="Deeplearning.ai" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/kindo_logo.png" alt="Kindo" className="h-4 sm:h-6 md:h-8 object-contain filter" />
-                  <img src="/website-spring25/assets/logos/cymetrx.png" alt="Cymetrx" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/Boston_Consulting_Group_2020_logo.svg.png" alt="Boston Consulting Group" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/GumGum_Logo.png" alt="GumGum" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/Amazon_Web_Services_Logo.png" alt="Amazon Web Services" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/Jane_Street_Capital_Logo.png" alt="Jane Street" className="h-4 sm:h-6 md:h-8 object-contain filter opacity-75" />
+                  <img src="/assets/logos/Insight_Partners_logo.png" alt="Insight Partners" className="h-4 sm:h-6 md:h-8 object-contain filter opacity-75" />
+                  <img src="/assets/logos/cisco_logo.png" alt="Cisco" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/windsurf_logo.svg" alt="Codeium (Windsurf)" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/deeplearningai_logo.png" alt="Deeplearning.ai" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/kindo_logo.png" alt="Kindo" className="h-4 sm:h-6 md:h-8 object-contain filter" />
+                  <img src="/assets/logos/cymetrx.png" alt="Cymetrx" className="h-4 sm:h-6 md:h-8 object-contain filter" />
                 </div>
               </div>
             </div>
@@ -152,7 +165,7 @@ function Home() {
                        bg-[position:center_bottom_20%] sm:bg-[position:center_bottom_50%] md:bg-[position:center_bottom]
                        bg-scroll md:bg-fixed" 
             style={{
-              backgroundImage: `url('/website-spring25/assets/teamaicropped.JPG')`,
+              backgroundImage: `url('/assets/teamaicropped.JPG')`,
               backgroundRepeat: 'no-repeat',
               height: '100%'
             }}

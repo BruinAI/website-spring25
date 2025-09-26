@@ -84,3 +84,16 @@ html, body {
   animation: logo-marquee 20s linear infinite;
   width: max-content;
 }
+
+/* Side-to-side bounce animation for scroll button */
+@keyframes bounce-side {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+.animate-bounce-side {
+  animation: bounce-side 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

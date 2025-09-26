@@ -61,7 +61,7 @@ export default function About() {
     <section 
       className="relative w-full min-h-[100vh] bg-center bg-scroll sm:bg-fixed"
       style={{
-        backgroundImage: `url('/website-spring25/assets/teamprof.JPG')`,
+        backgroundImage: `url('/assets/teamprof.JPG')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

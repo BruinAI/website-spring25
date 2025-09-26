@@ -37,7 +37,7 @@ function Create() {
         {/* Right Column */}
         <div className="flex-[1] flex flex-col items-center min-w-[180px] max-w-full">
             <img
-            src="/website-spring25/assets/beckpanel.jpeg"
+            src="/assets/beckpanel.jpeg"
             alt="photo"
             className="rounded-lg w-full object-cover"
             />

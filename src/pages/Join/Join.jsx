@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import { FiChevronRight } from 'react-icons/fi';
+import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 
 const stepsData = [
   {
@@ -14,44 +14,63 @@ const stepsData = [
   {
     id: 2,
     label: '25',
-    title: 'Info Session + Resume Slides',
-    body: 'Overview, Q&A, resume help, and networking',
-    when: 'Thu, Sep 25'
+    title: 'Info Session',
+    body: 'Overview and Q&A',
+    when: 'Thu, Sep 25 · 6 - 6:45pm',
+    link: 'https://ucla.zoom.us/j/92395013404',
+    linkText: 'join zoom session →'
+  },
+  {
+    id: 3,
+    label: '25',
+    title: 'Networking Night',
+    body: 'In-person networking',
+    when: 'Thu, Sep 25 · 7 - 7:45pm',
+    location: 'Delta Terrace'
   },
   {
     id: 3,
     label: '26',
     title: 'Research Paper Reading',
     body: 'Dive into an AI research paper with us',
-    when: 'Fri, Sep 26'
+    when: 'Fri, Sep 26',
+    location: 'Pitch Deck Room (UCLA Anderson Venture Accelerator)',
+    link: 'https://forms.gle/xeqiqGTxdEzTWNcM8',
+    linkText: 'RSVP →'
   },
   {
     id: 4,
     label: '29',
     title: 'Data Science Club Showcase',
     body: 'Joint info session with Data Science Union, DataRes, Statistics Club, and more',
-    when: 'Mon, Sep 29'
+    when: 'Mon, Sep 29',
+    link: 'https://ucla.zoom.us/j/98317113183',
+    linkText: 'join zoom session →'
   },
   {
     id: 5,
     label: '01',
     title: 'Applications Due',
     body: 'Submit your application!',
-    when: 'Wed, Oct 1 · 11:45pm'
+    when: 'Wed, Oct 1 · 11:45pm',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSc2SKevGqqWYPQkFxZrFbgcQ65sDsdWFZIF76KArXJLbeVK0w/viewform',
+    linkText: 'gogogo! →'
   },
   {
     id: 6,
     label: '03',
     title: 'AWS Summit',
     body: 'Join us at the AWS Summit — learn, network, and explore industry trends',
-    when: 'Fri-Sat, Oct 3-4'
+    when: 'Fri-Sat, Oct 3-4',
+    link: 'https://bit.ly/awsgenaisummit',
+    linkText: 'sign up →'
   },
   {
     id: 7,
-    label: '--',
+    label: '7',
     title: 'Coffee Chats',
     body: 'Invite Only',
-    when: 'TBD'
+    when: 'Tues, Oct 7'
   },
   {
     id: 8,
@@ -88,6 +107,16 @@ export default function Join() {
       
       timelineScroll.addEventListener('scroll', handleScroll);
       
+      // center current event on load
+      setTimeout(() => {
+        const cardWidth = timelineScroll.scrollWidth / stepsData.length;
+        const targetScroll = cardWidth * 3; // fourth card
+        timelineScroll.scrollTo({
+          left: targetScroll,
+          behavior: 'smooth'
+        });
+      }, 100);
+      
       return () => {
         timelineScroll.removeEventListener('scroll', handleScroll);
       };
@@ -101,14 +130,14 @@ export default function Join() {
       {/* app deadline */}
       <div className="sticky z-30 top-36 sm:top-28 md:top-20 right-4 md:right-8 max-w-48 sm:max-w-xs ml-auto">
         <a 
-          href="#"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc2SKevGqqWYPQkFxZrFbgcQ65sDsdWFZIF76KArXJLbeVK0w/viewform?usp=header"
           target="_blank"
           rel="noopener noreferrer"
           className="block hover:scale-105 transition-transform duration-200"
         >
           <div className="bg-gradient-to-r from-[#7069EC]/20 via-[#AD70DE]/20 to-[#EE78D0]/20 p-0.5 rounded-2xl shadow-lg backdrop-blur-sm animate-pulse">
             <div className="filter backdrop-blur-sm rounded-2xl p-2 px-3 text-center">
-              <div className="text-white font-semibold text-xs">applications coming soon ...</div>
+              <div className="text-white font-semibold text-xs">Applications due 10/1 🌟<br /> Apply now!</div>
             </div>
           </div>
         </a>
@@ -127,20 +156,20 @@ export default function Join() {
             {/* bg images 2 rows */}
             <div className="absolute inset-0 opacity-30">
               <div ref={topRowRef} className="absolute top-0 left-0 right-0 h-1/2 flex animate-scroll-left">
-                <img src="/website-spring25/assets/joins/yachtjoin11.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/sairsjoin12.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/execjoin13.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/aspjoin14.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/bsjdemodayjoin15.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/yachtjoin11.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/sairsjoin12.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/execjoin13.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/aspjoin14.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/bsjdemodayjoin15.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
               </div>
               
               <div ref={bottomRowRef} className="absolute bottom-0 left-0 right-0 h-1/2 flex animate-scroll-right" style={{ transform: 'translateX(-50%)' }}>
-                <img src="/website-spring25/assets/joins/retreat23join21.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/sbsyachtjoin22.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/team23join23.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/ajjhyachtjoin24.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/beachjoin25.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
-                <img src="/website-spring25/assets/joins/guitar.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/retreat23join21.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/sbsyachtjoin22.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/team23join23.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/ajjhyachtjoin24.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/beachjoin25.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
+                <img src="/assets/joins/guitar.jpeg" alt="" className="h-full w-auto object-cover flex-shrink-0" />
               </div>
             </div>
             
@@ -161,11 +190,29 @@ export default function Join() {
 
                       {/* main cards */}
                       <div className={`absolute left-1/2 -translate-x-1/2 ${idx % 2 === 0 ? 'bottom-[52%]' : 'top-[52%]'} w-[90%] md:w-[78%] z-10`}>
-                        <div className="rounded-xl border border-white/10 bg-zinc-900/80 p-4 md:p-6 backdrop-blur-sm">
-                          <h2 className="text-white font-extrabold text-lg md:text-xl leading-tight">{step.title}</h2>
-                          <p className="text-gray-200 mt-2 text-xs md:text-sm">{step.body}</p>
-                          <div className="mt-4 h-px w-24 bg-gradient-to-r from-[#7069EC] to-[#EE78D0]" />
-                        </div>
+                        {step.link ? (
+                          <a 
+                            href={step.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="block rounded-xl border border-white/10 bg-zinc-900/80 p-4 md:p-6 backdrop-blur-sm hover:bg-zinc-800/80 transition-colors duration-200 cursor-pointer"
+                          >
+                            <h2 className="text-white font-extrabold text-lg md:text-xl leading-tight">{step.title}</h2>
+                            <p className="text-gray-200 mt-2 text-xs md:text-sm whitespace-pre-line">{step.body}</p>
+                            <div className="mt-4 h-px w-24 bg-gradient-to-r from-[#7069EC] to-[#EE78D0]" />
+                            <div className="mt-2 text-[#EE78D0] text-xs md:text-sm font-semibold font-medium">{step.linkText || 'join here →'}</div>
+                          </a>
+                        ) : (
+                          <div className="rounded-xl border border-white/10 bg-zinc-900/80 p-4 md:p-6 backdrop-blur-sm">
+                            <h2 className="text-white font-extrabold text-lg md:text-xl leading-tight">{step.title}</h2>
+                            <p className="text-gray-200 mt-2 text-xs md:text-sm">{step.body}</p>
+                            
+                            <div className="mt-4 h-px w-24 bg-gradient-to-r from-[#7069EC] to-[#EE78D0]" />
+                            {step.location && (
+                              <p className="text-gray-400 mt-2 text-xs md:text-sm font-medium">@ {step.location}</p>
+                            )}
+                          </div>
+                        )}
                       </div>
 
                       {/* small cards */}
@@ -179,10 +226,36 @@ export default function Join() {
                 </div>
               </div>
             </div>
-            {/* scroll indicator */}
-            <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 bg-black/40 rounded-full pointer-events-none z-20">
-              <FiChevronRight className="text-white/70 drop-shadow-xl animate-ping" size={16} aria-hidden="true" style={{ animation: 'slideRight 1.5s ease-in-out infinite' }} />
-            </div>
+            {/* scroll indicators */}
+            <button 
+              onClick={() => {
+                if (timelineRef.current) {
+                  timelineRef.current.scrollBy({
+                    left: -300,
+                    behavior: 'smooth'
+                  });
+                }
+              }}
+              className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 bg-black/40 hover:bg-black/60 rounded-full z-20 transition-all duration-200 cursor-pointer animate-bounce-side"
+              aria-label="Scroll timeline left"
+            >
+              <FiChevronLeft className="text-white/70 hover:text-white drop-shadow-xl" size={16} />
+            </button>
+            
+            <button 
+              onClick={() => {
+                if (timelineRef.current) {
+                  timelineRef.current.scrollBy({
+                    left: 300,
+                    behavior: 'smooth'
+                  });
+                }
+              }}
+              className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 bg-black/40 hover:bg-black/60 rounded-full z-20 transition-all duration-200 cursor-pointer animate-bounce-side"
+              aria-label="Scroll timeline right"
+            >
+              <FiChevronRight className="text-white/70 hover:text-white drop-shadow-xl" size={16} />
+            </button>
           </div>
         </div>
       </main>
