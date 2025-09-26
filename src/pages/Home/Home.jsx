@@ -59,6 +59,19 @@ function Home() {
         >
           {/* banner */}
           <div className="text-center z-10 max-w-[75vw]">
+            {/* application bubble link */}
+            <div className="flex justify-center mb-3 animate-pulse">
+              <Link 
+                to="/join"
+                className="block hover:scale-105 transition-transform duration-200"
+              >
+                <div className="bg-gradient-to-r from-[#7069EC]/20 via-[#AD70DE]/20 to-[#EE78D0]/20 p-0.5 rounded-2xl shadow-lg backdrop-blur-sm">
+                  <div className="filter backdrop-blur-sm rounded-2xl px-3 py-1.5 text-center">
+                    <div className="text-white font-semibold text-sm">join us!</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
             <div className="flex items-center justify-center mb-6">
               <span className="text-[#EE78D0] font-bold tracking-widest md:text-lg text-sm uppercase">
                 CREATE <span className="mx-2 font-thin">|</span> CONNECT <span className="mx-2 font-thin">|</span> LEARN

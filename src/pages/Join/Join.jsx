@@ -34,28 +34,36 @@ const stepsData = [
     title: 'Research Paper Reading',
     body: 'Dive into an AI research paper with us',
     when: 'Fri, Sep 26',
-    location: 'Pitch Deck Room (UCLA Anderson Venture Accelerator)'
+    location: 'Pitch Deck Room (UCLA Anderson Venture Accelerator)',
+    link: 'https://forms.gle/xeqiqGTxdEzTWNcM8',
+    linkText: 'RSVP →'
   },
   {
     id: 4,
     label: '29',
     title: 'Data Science Club Showcase',
     body: 'Joint info session with Data Science Union, DataRes, Statistics Club, and more',
-    when: 'Mon, Sep 29'
+    when: 'Mon, Sep 29',
+    link: 'https://ucla.zoom.us/j/98317113183',
+    linkText: 'join zoom session →'
   },
   {
     id: 5,
     label: '01',
     title: 'Applications Due',
     body: 'Submit your application!',
-    when: 'Wed, Oct 1 · 11:45pm'
+    when: 'Wed, Oct 1 · 11:45pm',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSc2SKevGqqWYPQkFxZrFbgcQ65sDsdWFZIF76KArXJLbeVK0w/viewform',
+    linkText: 'gogogo! →'
   },
   {
     id: 6,
     label: '03',
     title: 'AWS Summit',
     body: 'Join us at the AWS Summit — learn, network, and explore industry trends',
-    when: 'Fri-Sat, Oct 3-4'
+    when: 'Fri-Sat, Oct 3-4',
+    link: 'https://bit.ly/awsgenaisummit',
+    linkText: 'sign up →'
   },
   {
     id: 7,
@@ -102,7 +110,7 @@ export default function Join() {
       // center current event on load
       setTimeout(() => {
         const cardWidth = timelineScroll.scrollWidth / stepsData.length;
-        const targetScroll = cardWidth * 1; // Second card (index 1)
+        const targetScroll = cardWidth * 3; // fourth card
         timelineScroll.scrollTo({
           left: targetScroll,
           behavior: 'smooth'
