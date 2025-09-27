@@ -110,7 +110,7 @@ export default function Join() {
       // center current event on load
       setTimeout(() => {
         const cardWidth = timelineScroll.scrollWidth / stepsData.length;
-        const targetScroll = cardWidth * 3; // fourth card
+        const targetScroll = cardWidth * 4; // fifth card
         timelineScroll.scrollTo({
           left: targetScroll,
           behavior: 'smooth'
