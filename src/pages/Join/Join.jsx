@@ -17,8 +17,8 @@ const stepsData = [
     title: 'Info Session',
     body: 'Overview and Q&A',
     when: 'Thu, Sep 25 · 6 - 6:45pm',
-    link: 'https://ucla.zoom.us/j/92395013404',
-    linkText: 'join zoom session →'
+    link: 'https://drive.google.com/file/d/1IUxaRMDSmzMzRHoPKFOS6_3ewQbQmX8e/view',
+    linkText: 'watch the recording →'
   },
   {
     id: 3,
